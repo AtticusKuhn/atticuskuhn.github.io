@@ -7,7 +7,7 @@ import { capitalize } from "../lib/utils"
 const technologies = {
     "javascript": "Javascript was the first language I learned, and it's still my favorite language. I like how I can use it on both the frontend and the backend.",
     "python": "Python was a language that taught me how to write ergonomic and elegant code. I first entered data sicence and machine learning with python, and well written pyython code can read like english.",
-    "haskell": "haskell was mwy introduction to functional programming. It revealed to me how mathematmical programming could be.",
+    "haskell": "haskell was my introduction to functional programming. It revealed to me how mathematmical programming could be.",
     "imba": "Imba was a frontend language that inspired me to take more pride in frontend design.",
     "php": "Php is a fun language which I love because of how easy it makes web development",
     "idris": "Agda is a wonderful language which feels like a playground of mathematics. It perfectly synthesises the two disparate areas of theorem proving and programming into a cohesive and interactive experience.",
@@ -32,9 +32,9 @@ const Technologies: React.FC<{}> = () => {
                     <img onClick={() => setCurrentTech(key)} className=" min-w-full mx-auto" src={"/images/techs/" + tech[0] + ".png"} />
                 </div>)}
             </div>
-            <div className="w-6/12 m-auto">
+            <div className="w-full  m-auto">
                 <h1 className="font-bold text-4xl">{capitalize(techs[currentTech][0])}</h1>
-                <div className="w-full p-6xl">{techs[currentTech][1]}</div>
+                <div className="w-full sm:p-xl p-base">{techs[currentTech][1]}</div>
             </div>
         </div>
     </div>
@@ -43,13 +43,16 @@ const EPAMission: React.FC<{}> = () => {
     return <div>
         <Heading>I Teach Computer Science</Heading>
         <div className="fl">
-            <div>
+            <div className="m-xl">
                 Due to my love of computer science, I also enjoy teaching people computer science.
                 For three years, I have been teaching eager students as a founding member of
-                the <MyLink href="https://www.palypython.com">Paly Python Club</MyLink>
+                the <MyLink href="https://www.palypython.com">Paly Python Club</MyLink>.
+
+                I have also made several <MyLink href="https://www.youtube.com/watch?v=G4ZOOrkdy3g">educational youtube videos</MyLink> in order to spread knowlege
+                of computer science
             </div>
-            <div>
-                lorem ipsime e e werioasnd aeoirakjsdhwqeo awrenqweu asduaew
+            <div className="bg-cover">
+                <img src="/images/workshop.jpg" />
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ type linkprops = { href: string } & React.DetailedHTMLProps<React.AnchorHTMLAttr
 
 const MyLink: React.FC<linkprops> = (props) => {
     return <Link href={props.href}>
-        <a {...props} className="rounded bg-primary-300 p-1 m-1 hover:translate-y-3 translate-y-3 duration-75">
+        <a {...props} className="rounded bg-primary-300 p-1 m-1 hover:translate-y-3 duration-500 hover:bg-primary-100">
             {props.children}
         </a>
     </Link>
