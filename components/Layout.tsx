@@ -7,30 +7,37 @@ type Props = {
   title?: string
 }
 
+const NavLink: React.FC<{ link: string, text: string }> = ({ text, link }) => (<>
+  <Link href={"/" + link}>
+    <a className="mx-1 px-1">{text}</a>
+  </Link>{' '}
+  |{' '}
+</>)
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+  <div className="text-center flex flex-col w-full  ">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header className="mx-auto">
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
+    <header className="text-xl">
+      <nav className="px-1">
+
+        <NavLink link="" text="Home" />
+        <NavLink link="blog" text="Blog" />
+        <NavLink link="about" text="About" />
+        <NavLink link="computer-science" text="Computer Science" />
+        <NavLink link="math" text="Mathematics" />
+        <NavLink link="contact" text="Contact me" />
 
       </nav>
     </header>
-    {children}
+    <div className="center bg-primary-200 mx-200 text-center min-h-screen		p-3xl	">
+      {children}
+    </div>
     <footer>
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span>Ⓒ all rights reserved Atticus Kuhn {new Date().getFullYear()}</span>
     </footer>
   </div>
 )
