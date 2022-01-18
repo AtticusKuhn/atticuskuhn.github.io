@@ -5,3 +5,8 @@
 @import 'tailwindcss/components';
 /* @import './base.css'; */
 @import 'tailwindcss/utilities';
+@layer components {
+    .fl {
+      @apply flex flex-col  sm:flex-row
+    }
+  }
