@@ -4,12 +4,15 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "deploy": "NODE_ENV=production next build && next export -o dist && touch dist/.nojekyll && git add dist && git commit -m \"Initial dist subtree commit\" && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0",
+    "react-syntax-highlighter": "^15.4.5"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",

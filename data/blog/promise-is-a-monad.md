@@ -7,15 +7,14 @@ image: monad.jpg
 ---
 Because I program in haskell, I have a lot of experience with monads, and now I see monads wherever I go. Monads are truly everywhere. Many people have already interacted with monads without even realising it. In fact, Javascript's promise is a monad. Despite this, the first result on google search for "is promise a monad", is titled, "no, promise is not a monad". I see this blog post as a response to that article. In this post by Buzz De Cafe, the author claims that javascript's promise is not a monad because it does not follow the mathematical laws of monads. However, nobody in haskell actually uses moands in the mathematical sense. It doesn't really matter if Promise is a mathematical monad, what really matters is if it acts like a programming monad, which it does. For example, let's take the haskell function 
 
-```haskell,
+```haskell
 
 sequence :: (Traversable t, Monad m) => t (m a) -> m (t a)
 
 ```
 When I saw this, I was struck by how similar it is to Javascript's
 
-```haskell,
-
+```haskell
 Promise.all ::[promise a] -> promise [a]
 ```
 I have written the type signature of Javascript's Promise.all in haskell syntax to lay apparent how similar these two functions are. Also let us look at .then vs >>=
@@ -26,14 +25,14 @@ I have written the type signature of Javascript's Promise.all in haskell syntax 
  (>>=) :: Monad m => m a -> (a -> m b) -> m b
 ```
 
-```javascript,
+```javascript
 
 fetch(url)
 	.then(data=> data.json())
 ```
 Both haskell's bind operator >>= and javascript .then extract the internal value of a monad. And let me remind the reader, that >>= is the minimal operator for the monad typeclass in haskell, so if promise were defined in haskell, all one would have to do is
 
-````haskell,
+````haskell
 instance Monad Promise where
      (>>=) = (then)
 ```

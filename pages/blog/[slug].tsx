@@ -1,8 +1,10 @@
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next"
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import React from "react";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
-import { blog, findBlogBySlug, getBlogs } from "../../lib/blog"
+import MdViewer from "../../components/MdViewer";
+import { blog, findBlogBySlug, getBlogs } from "../../lib/blog";
+
 
 function BlogPage({ blog }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <Layout>
@@ -14,7 +16,8 @@ function BlogPage({ blog }: InferGetStaticPropsType<typeof getStaticProps>) {
             <div className="text-sm">Published {new Date(blog.date).toLocaleDateString("en-US")}</div>
             <div className="text-sm">Tags: {blog.tags.join(", ")}</div>
         </div>
-        <p className="text-justify	">{blog.content}</p>
+        <p className="text-justify	">
+            <MdViewer markdown={blog.content} /></p>
     </Layout>
 }
 

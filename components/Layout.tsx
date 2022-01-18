@@ -25,6 +25,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
         <NavLink link="" text="Home" />
         <NavLink link="blog" text="Blog" />
+        <NavLink link="projects" text="My Projects" />
         <NavLink link="about" text="About" />
         <NavLink link="computer-science" text="Computer Science" />
         <NavLink link="math" text="Mathematics" />

@@ -7,9 +7,9 @@ import { blog, getBlogs } from "../../lib/blog"
 
 const BlogPreview: React.FC<{ blog: blog }> = ({ blog }) => (<>
     <Link href={"/blog/" + blog.slug}>
-        <a className="rounded bg-primary-100 m-8 p-xl w-full flex flex-row w-5/12 mx-auto hover:-translate-y-1 duration-75	">
-            <div className="flex flex-row">
-                <img width="100" height="100" className="m-0 block	" src={blog.image} />
+        <a className="rounded bg-primary-100 m-8 p-xl w-full flex flex-row sm:flex-col w-5/12 mx-auto hover:-translate-y-1 duration-75	">
+            <div className="flex flex-col sm:flex-row w-full h-full">
+                <img className="m-0 block sm:h-6/12 sm:w-6/12 h-full w-full" src={blog.image} />
                 <div className="m-xl">
                     <div className="text-blog text-xl">{blog.title}</div>
                     <div className="text-primary-300 text-sm">{new Date(blog.date).toLocaleDateString("en-US")}</div>
