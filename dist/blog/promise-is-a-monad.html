@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><title>This is the default title</title><meta charSet="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/d254fb9d474b901f.css" as="style"/><link rel="stylesheet" href="/_next/static/css/d254fb9d474b901f.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-514908bffb652963.js" defer=""></script><script src="/_next/static/chunks/framework-91d7f78b5b4003c8.js" defer=""></script><script src="/_next/static/chunks/main-e47bb435dabe4202.js" defer=""></script><script src="/_next/static/chunks/pages/_app-2068ebb016975354.js" defer=""></script><script src="/_next/static/chunks/715-8dcf58f6df3004e4.js" defer=""></script><script src="/_next/static/chunks/pages/blog/%5Bslug%5D-b0a999144a500c06.js" defer=""></script><script src="/_next/static/KhqT9YgYMzR5uwU6rrSeM/_buildManifest.js" defer=""></script><script src="/_next/static/KhqT9YgYMzR5uwU6rrSeM/_ssgManifest.js" defer=""></script><script src="/_next/static/KhqT9YgYMzR5uwU6rrSeM/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><div class="text-center flex flex-col w-full "><header class="text-xl"><nav class="px-1"><a class="mx-1 px-1" href="/">Home</a> <!-- -->|<!-- --> <a class="mx-1 px-1" href="/blog">Blog</a> <!-- -->|<!-- --> <a class="mx-1 px-1" href="/about">About</a> <!-- -->|<!-- --> <a class="mx-1 px-1" href="/computer-science">Computer Science</a> <!-- -->|<!-- --> <a class="mx-1 px-1" href="/math">Mathematics</a> <!-- -->|<!-- --> <a class="mx-1 px-1" href="/contact">Contact me</a> <!-- -->|<!-- --> </nav></header><div class="center bg-primary-200 mx-200 text-center min-h-screen p-3xl "><div class="container mx-auto flex content-center flex-col"><h1 class="flex flex-col text-primary-900 text-5xl font-bold p-1">Why promise IS a monad</h1><div class="text-primary-400">There are monads all around us, even if we don&#x27;t notice it</div><img class="w-6/12 h-6/12 mx-auto" src="/images/monad.jpg"/><div class="text-sm">By Atticus Kuhn</div><div class="text-sm">Published <!-- -->4/12/2021</div><div class="text-sm">Tags: <!-- -->haskell</div></div><p class="text-justify ">
+Because I program in haskell, I have a lot of experience with monads, and now I see monads wherever I go. Monads are truly everywhere. Many people have already interacted with monads without even realising it. In fact, Javascript&#x27;s promise is a monad. Despite this, the first result on google search for &quot;is promise a monad&quot;, is titled, &quot;no, promise is not a monad&quot;. I see this blog post as a response to that article. In this post by Buzz De Cafe, the author claims that javascript&#x27;s promise is not a monad because it does not follow the mathematical laws of monads. However, nobody in haskell actually uses moands in the mathematical sense. It doesn&#x27;t really matter if Promise is a mathematical monad, what really matters is if it acts like a programming monad, which it does. For example, let&#x27;s take the haskell function 
+
+```haskell,
+
+sequence :: (Traversable t, Monad m) =&gt; t (m a) -&gt; m (t a)
+
+```
+When I saw this, I was struck by how similar it is to Javascript&#x27;s
+
+```haskell,
+
+Promise.all ::[promise a] -&gt; promise [a]
+```
+I have written the type signature of Javascript&#x27;s Promise.all in haskell syntax to lay apparent how similar these two functions are. Also let us look at .then vs &gt;&gt;=
+
+
+```haskell,
+
+ (&gt;&gt;=) :: Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b
+```
+
+```javascript,
+
+fetch(url)
+	.then(data=&gt; data.json())
+```
+Both haskell&#x27;s bind operator &gt;&gt;= and javascript .then extract the internal value of a monad. And let me remind the reader, that &gt;&gt;= is the minimal operator for the monad typeclass in haskell, so if promise were defined in haskell, all one would have to do is
+
+````haskell,
+instance Monad Promise where
+     (&gt;&gt;=) = (then)
+```
+
+It is obvious that Promise has all the characteristics of a Monad, so when haskellers complain that it does not obey some mathematical law, those are just sprinklings on top of a monad that don&#x27;t really affect its functionality.  
+
+Some people may knock Javascript for not being as intellectual or high level as Haskell, but in fact it has almost all of the same structures, just with not as mathematical names. The example of Javascript&#x27;s Promise being a monad shows that it is truly a high level language. 
+
+
+
+</p></div><footer><hr/><span>Ⓒ all rights reserved Atticus Kuhn <!-- -->2022</span></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"blog":{"content":"\nBecause I program in haskell, I have a lot of experience with monads, and now I see monads wherever I go. Monads are truly everywhere. Many people have already interacted with monads without even realising it. In fact, Javascript's promise is a monad. Despite this, the first result on google search for \"is promise a monad\", is titled, \"no, promise is not a monad\". I see this blog post as a response to that article. In this post by Buzz De Cafe, the author claims that javascript's promise is not a monad because it does not follow the mathematical laws of monads. However, nobody in haskell actually uses moands in the mathematical sense. It doesn't really matter if Promise is a mathematical monad, what really matters is if it acts like a programming monad, which it does. For example, let's take the haskell function \n\n```haskell,\n\nsequence :: (Traversable t, Monad m) =\u003e t (m a) -\u003e m (t a)\n\n```\nWhen I saw this, I was struck by how similar it is to Javascript's\n\n```haskell,\n\nPromise.all ::[promise a] -\u003e promise [a]\n```\nI have written the type signature of Javascript's Promise.all in haskell syntax to lay apparent how similar these two functions are. Also let us look at .then vs \u003e\u003e=\n\n\n```haskell,\n\n (\u003e\u003e=) :: Monad m =\u003e m a -\u003e (a -\u003e m b) -\u003e m b\n```\n\n```javascript,\n\nfetch(url)\n\t.then(data=\u003e data.json())\n```\nBoth haskell's bind operator \u003e\u003e= and javascript .then extract the internal value of a monad. And let me remind the reader, that \u003e\u003e= is the minimal operator for the monad typeclass in haskell, so if promise were defined in haskell, all one would have to do is\n\n````haskell,\ninstance Monad Promise where\n     (\u003e\u003e=) = (then)\n```\n\nIt is obvious that Promise has all the characteristics of a Monad, so when haskellers complain that it does not obey some mathematical law, those are just sprinklings on top of a monad that don't really affect its functionality.  \n\nSome people may knock Javascript for not being as intellectual or high level as Haskell, but in fact it has almost all of the same structures, just with not as mathematical names. The example of Javascript's Promise being a monad shows that it is truly a high level language. \n\n\n\n","date":"April 12, 2021","tags":["haskell"],"title":"Why promise IS a monad","slug":"promise-is-a-monad","description":"There are monads all around us, even if we don't notice it","image":"/images/monad.jpg"}},"__N_SSG":true},"page":"/blog/[slug]","query":{"slug":"promise-is-a-monad"},"buildId":"KhqT9YgYMzR5uwU6rrSeM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
