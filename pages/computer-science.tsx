@@ -28,7 +28,7 @@ const Technologies: React.FC<{}> = () => {
         <h2 className="text-3xl">Technologies I've Used (and what I learned from each one)</h2>
         <div className="fl">
             <div className="grid grid-rows-3 grid-flow-col gap-xl w-6/12 m-auto">
-                {techs.map((tech, key) => <div key={key} className={`bg-cover hover:bg-contain duration-1000 bg-primary-${key === currentTech ? "100" : "500"} m-auto`}>
+                {techs.map((tech, key) => <div key={key} className={`cursor-pointer	 bg-cover hover:bg-contain duration-1000 bg-primary-${key === currentTech ? "100" : "500"} m-auto`}>
                     <img onClick={() => setCurrentTech(key)} className=" min-w-full mx-auto" src={"/images/techs/" + tech[0] + ".png"} />
                 </div>)}
             </div>

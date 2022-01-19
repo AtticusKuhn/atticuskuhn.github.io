@@ -24,6 +24,8 @@ function BlogPage({ blog }: InferGetStaticPropsType<typeof getStaticProps>) {
 export const getStaticProps: GetStaticProps<{ blog: blog }, { slug: string }> = async (props) => {
     const { slug } = props.params;
     const blog = findBlogBySlug(slug)
+    const reccomendedArticles = randomItemsFromArray(articlesList
+        .filter(a => a.id !== params.article), 3)
     return {
         props: {
             blog,

@@ -14,7 +14,7 @@ const NavLink: React.FC<{ link: string, text: string }> = ({ text, link }) => (<
   |{' '}
 </>)
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div className="text-center flex flex-col w-full  ">
+  <div className="text-center flex flex-col w-full  bg-primary-100 text-primary-800">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
