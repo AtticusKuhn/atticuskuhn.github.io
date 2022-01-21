@@ -3,7 +3,7 @@ title: Why I love VIM
 tags: vim
 date: April 12, 2021
 description: Vim is arguable the best text editor
-image: vim.jpg
+image: vim.png
 ---
 
 The text editor VIM is possibly one of my favourite tools for developing and coding. Whenever I have the opportunity to use vim, from VS code to Overleaf, and even google docs, I take it. I just want more people to learn and use VIM because of what an enjoyable tool is

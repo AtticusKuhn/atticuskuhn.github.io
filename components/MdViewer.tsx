@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import Heading from './Heading'
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 
@@ -24,7 +25,25 @@ const MdViewer: React.FC<{ markdown: string }> = (props) => {
                         {children}
                     </code>
                 )
-            }
+            },
+            h1(props) {
+                return <Heading {...props} />
+            },
+            h2(props) {
+                return <Heading {...props} />
+            },
+            h3(props) {
+                return <Heading {...props} />
+            },
+            h4(props) {
+                return <Heading {...props} />
+            },
+            h5(props) {
+                return <Heading {...props} />
+            },
+            h6(props) {
+                return <Heading {...props} />
+            },
         }}
     />
 }

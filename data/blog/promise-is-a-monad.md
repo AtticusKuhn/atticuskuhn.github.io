@@ -32,7 +32,7 @@ fetch(url)
 ```
 Both haskell's bind operator >>= and javascript .then extract the internal value of a monad. And let me remind the reader, that >>= is the minimal operator for the monad typeclass in haskell, so if promise were defined in haskell, all one would have to do is
 
-````haskell
+```haskell
 instance Monad Promise where
      (>>=) = (then)
 ```

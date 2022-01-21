@@ -1,12 +1,18 @@
 // import Link from 'next/link'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import React from 'react'
 import Button from '../components/Button'
+import Card from '../components/Card'
+import Heading from '../components/Heading'
 import Layout from '../components/Layout'
+import { blog, getBlogs } from '../lib/blog'
+import { getProjects, project } from '../lib/project'
 
-const IndexPage = () => (
-  <Layout>
-    <div className="font-bold text-xl">
+function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
+  return <Layout>
+    <Heading>
       Hello, my name is Atticus Kuhn
-    </div>
+    </Heading>
     <div className="flex flex-col  sm:flex-row">
       <div className="p-3xl">
         <img width="500" height="500" src="/images/atticus-kuhn.jpg" />
@@ -23,7 +29,19 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Heading>My Recent Activity</Heading>
+    <div className="fl">
+      {recent.map((rec) => <Card {...rec} link={rec.link} />)}
+    </div>
   </Layout>
-)
+}
+export const getStaticProps: GetStaticProps<{ recent: ((blog | project) & { link: string })[] }> = async (props) => {
+  return {
+    props: {
+      recent: [...getBlogs().map(b => Object.assign(b, { link: `/blog/${b.slug}` })), ...getProjects().map(b => Object.assign(b, { link: `/projects/${b.slug}` }))].sort((a, b) => (new Date(a.date).getTime() - new Date(b.date).getTime())).slice(0, 5)
+    }
+  }
+}
+
 
 export default IndexPage

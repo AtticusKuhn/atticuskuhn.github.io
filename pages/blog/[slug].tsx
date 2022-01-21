@@ -1,14 +1,17 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
+import Link from "next/link";
 import React from "react";
+import Card from "../../components/Card";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import MdViewer from "../../components/MdViewer";
 import { blog, findBlogBySlug, getBlogs } from "../../lib/blog";
+import { randomItemsFromArray } from "../../lib/utils";
 
 
-function BlogPage({ blog }: InferGetStaticPropsType<typeof getStaticProps>) {
+function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <Layout>
-        <div className="container mx-auto flex content-center flex-col">
+        <div className="container mx-auto flex content-center flex-col my-3xl">
             <Heading>{blog.title}</Heading>
             <div className="text-primary-400">{blog.description}</div>
             <img className="w-6/12 h-6/12 mx-auto" src={blog.image} />
@@ -16,19 +19,27 @@ function BlogPage({ blog }: InferGetStaticPropsType<typeof getStaticProps>) {
             <div className="text-sm">Published {new Date(blog.date).toLocaleDateString("en-US")}</div>
             <div className="text-sm">Tags: {blog.tags.join(", ")}</div>
         </div>
-        <p className="text-justify	">
-            <MdViewer markdown={blog.content} /></p>
+        <p className="text-justify my-3xl">
+            <MdViewer markdown={blog.content} />
+        </p>
+        <div>
+            <div className="text-lg font-bold"> Reccomended Articles</div>
+            <div className="fl">
+                {reccomendedBlog.map((rec) => <Card {...rec} link={`/blog/${rec.slug}`} />)}
+            </div>
+        </div>
     </Layout>
 }
 
-export const getStaticProps: GetStaticProps<{ blog: blog }, { slug: string }> = async (props) => {
+export const getStaticProps: GetStaticProps<{ blog: blog, reccomendedBlog: blog[] }, { slug: string }> = async (props) => {
     const { slug } = props.params;
     const blog = findBlogBySlug(slug)
-    const reccomendedArticles = randomItemsFromArray(articlesList
-        .filter(a => a.id !== params.article), 3)
+    const reccomendedBlog = randomItemsFromArray(getBlogs()
+        .filter(a => a.slug !== slug), 3)
     return {
         props: {
             blog,
+            reccomendedBlog,
         }
     }
 }
