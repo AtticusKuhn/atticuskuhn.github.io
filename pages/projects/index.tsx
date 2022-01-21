@@ -7,7 +7,7 @@ import { getProjects, project } from "../../lib/project"
 
 
 
-function Blog({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
+function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <>
         <Layout>
             <Heading>My Projects</Heading>
@@ -27,4 +27,4 @@ export const getStaticProps: GetStaticProps<{ projects: project[] }> = async () 
     }
 }
 // export getStaticProps
-export default Blog
+export default Project

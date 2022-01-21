@@ -25,6 +25,7 @@ const tojson = (str: string): { [prop: string]: string } =>
 
 const parseMd = (mdContent: string): parsedMd => {
     const m = mdContent.match(/(?<=---\n).*?(?=\n---)/s)
+    console.log("m", m)
     const headers = tojson(m[0])
     const m2 = mdContent.match(/(?<=---.*?---).*/s)
     const content = m2[0]
@@ -39,6 +40,7 @@ export const getProjects = (): project[] => {
     const projectsList = fs.readdirSync(projectDir)
     const projects: project[] = projectsList.map((name) => {
         const md = readMd(projectDir + "/" + name)
+        console.log("md.headers.previewUrl", md.headers.previewUrl)
         return {
             content: md.content,
             date: md.headers.date,
