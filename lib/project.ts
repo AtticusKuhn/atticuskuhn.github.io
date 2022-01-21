@@ -17,16 +17,18 @@ type parsedMd = {
         [key: string]: string
     }
 }
+const split = (char: string) => (str: string): [string, string] => [str.split(char)[0], str.split(char).slice(1).join(char)]
 const tojson = (str: string): { [prop: string]: string } =>
     str
         .split("\n")
-        .map((line) => line.split(":"))
+        .map(split(":"))
         .reduce((acc, [key, val]) => Object.assign(acc, { [key]: val.trim() }), {})
 
 const parseMd = (mdContent: string): parsedMd => {
     const m = mdContent.match(/(?<=---\n).*?(?=\n---)/s)
     console.log("m", m)
     const headers = tojson(m[0])
+    console.log("headers", headers)
     const m2 = mdContent.match(/(?<=---.*?---).*/s)
     const content = m2[0]
     return {
