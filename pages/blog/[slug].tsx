@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
+import { BlogJsonLd, NextSeo } from "next-seo";
 import Link from "next/link";
 import React from "react";
 import Card from "../../components/Card";
@@ -11,6 +12,35 @@ import { randomItemsFromArray } from "../../lib/utils";
 
 function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <Layout>
+        <NextSeo
+            title={blog.title}
+            description={blog.description}
+            openGraph={{
+                title: blog.title,
+                description: 'Description of open graph article',
+                url: 'https://www.example.com/articles/article-title',
+                type: 'article',
+                article: {
+                    publishedTime: new Date(blog.date).toISOString(),
+                    authors: ["https://atticuskuhn.github.io"],
+                    tags: blog.tags,
+                },
+                images: [
+                    {
+                        url: blog.image,
+                    },
+                ],
+            }}
+        />
+        <BlogJsonLd
+            url={`https://atticuskuhn.github.io/blog/${blog.slug}`}
+            title={blog.title}
+            images={[blog.image]}
+            datePublished={new Date(blog.date).toISOString()}
+            dateModified={new Date(blog.date).toISOString()}
+            authorName="Atticus Kuhn"
+            description={blog.description}
+        />
         <div className="container mx-auto flex content-center flex-col my-3xl">
             <Heading>{blog.title}</Heading>
             <div className="text-primary-400">{blog.description}</div>

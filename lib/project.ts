@@ -8,7 +8,7 @@ export type project = {
     slug: string,
     description: string,
     image: string,
-    sourceCodeUrl?: string,
+    sourceCodeUrl: string,
     previewUrl?: string,
 }
 type parsedMd = {
@@ -51,7 +51,7 @@ export const getProjects = (): project[] => {
             slug: name.split(".")[0],
             description: md.headers.description,
             image: "/images/" + md.headers.image,
-            previewUrl: md.headers.previewUrl,
+            previewUrl: md.headers.previewUrl || null,
             sourceCodeUrl: md.headers.sourceCodeUrl,
 
         }

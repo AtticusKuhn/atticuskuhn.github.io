@@ -82,7 +82,7 @@ const Math: React.FC<{}> = () => {
         <Area
             title="Type Theory"
             image="/images/type-theory.png"
-            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/stuff"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs</>}
+            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/blog/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs</>}
             left
         />
         <Area

@@ -5,7 +5,7 @@ tags: games, html, fun
 date: May 22, 2018
 title: Ultimate Tic Tac Toe
 description: A fun game I made
-image: none
+image: uttt.png
 ---
 I used to play this fun game in school with my friends, so I was
 inspired to program it in HTML. This was the first game that I ever programmed,

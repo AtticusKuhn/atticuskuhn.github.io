@@ -12,7 +12,7 @@ function ProjectPage({ project }: InferGetStaticPropsType<typeof getStaticProps>
         <div className="container mx-auto flex content-center flex-col my-3xl">
             <Heading>{project.title}</Heading>
             <div className="fl mx-auto">
-                <Button link={project.previewUrl}>Try the Demo</Button>
+                {project.previewUrl && <Button link={project.previewUrl}>Try the Demo</Button>}
                 <Button link={project.sourceCodeUrl}>See the Source Code</Button>
             </div>
             <div className="text-primary-400">{project.description}</div>

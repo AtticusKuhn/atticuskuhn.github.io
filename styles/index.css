@@ -9,4 +9,7 @@
     .fl {
       @apply flex flex-col  sm:flex-row
     }
+    .pop {
+      @apply hover:-translate-y-1 duration-75
+    }
   }
