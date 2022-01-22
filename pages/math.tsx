@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo"
 import React from "react"
 import Card, { CardProps } from "../components/Card"
 import Heading, { Subheading } from "../components/Heading"
@@ -68,6 +69,10 @@ const Area: React.FC<{ title: string, image: string, text: React.ReactChild, lef
 </>)
 const Math: React.FC<{}> = () => {
     return <Layout>
+        <NextSeo
+            title="math"
+            description="I love math"
+        />
         <Heading>Math: my Biggest Passion</Heading>
         <div>For many years, I haev been passionate about mathematics. I have entered into some
             math competetions, and I study math outside of school. What I love most about it is

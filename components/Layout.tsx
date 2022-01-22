@@ -4,7 +4,6 @@ import Head from 'next/head'
 
 type Props = {
   children?: ReactNode
-  title?: string
 }
 
 const NavLink: React.FC<{ link: string, text: string }> = ({ text, link }) => (<>
@@ -13,13 +12,8 @@ const NavLink: React.FC<{ link: string, text: string }> = ({ text, link }) => (<
   </Link>{' '}
   |{' '}
 </>)
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const Layout = ({ children }: Props) => (
   <div className="text-center flex flex-col w-full  bg-primary-100 text-primary-800">
-    <Head>
-      <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
     <header className="text-xl">
       <nav className="px-1">
 

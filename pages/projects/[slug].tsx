@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
+import { NextSeo } from "next-seo";
 import React from "react";
 import Button from "../../components/Button";
 import Heading from "../../components/Heading";
@@ -9,6 +10,29 @@ import { findProjectBySlug, getProjects, project } from "../../lib/project";
 
 function ProjectPage({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <Layout>
+        <NextSeo
+            title={project.title}
+            description={project.description}
+            openGraph={{
+                title: `PROJECT | ${project.title}`,
+                description: project.description
+                ,
+                url: `https://atticuskuhn.github.io/projects/${project.slug}`,
+                type: 'article',
+                article: {
+                    publishedTime: new Date(project.date).toISOString(),
+                    authors: ["https://atticuskuhn.github.io"],
+                    tags: project.tags,
+                },
+                images: [{ url: project.image, },],
+            }}
+            additionalLinkTags={[
+                {
+                    rel: 'icon',
+                    href: project.image,
+                },
+            ]}
+        />
         <div className="container mx-auto flex content-center flex-col my-3xl">
             <Heading>{project.title}</Heading>
             <div className="fl mx-auto">

@@ -1,5 +1,6 @@
 // import Link from 'next/link'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { NextSeo } from 'next-seo'
 import React from 'react'
 import Button from '../components/Button'
 import Card from '../components/Card'
@@ -10,6 +11,10 @@ import { getProjects, project } from '../lib/project'
 
 function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
   return <Layout>
+    <NextSeo
+      title="home"
+      description="My name is Atticus Kuhn, and welcome to my website to learn about me."
+    />
     <Heading>
       Hello, my name is Atticus Kuhn
     </Heading>

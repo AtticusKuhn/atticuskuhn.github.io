@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
+import { NextSeo } from "next-seo"
 import React from "react"
 import Heading from "../../components/Heading"
 import Layout from "../../components/Layout"
@@ -10,6 +11,10 @@ import { getProjects, project } from "../../lib/project"
 function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <>
         <Layout>
+            <NextSeo
+                title="my projects"
+                description="see what I'm working on by checking out my projects"
+            />
             <Heading>My Projects</Heading>
             <p>What have I been up to? Follow along with my progress on my coding adventure with these projects.</p>
             <div className="m-6">

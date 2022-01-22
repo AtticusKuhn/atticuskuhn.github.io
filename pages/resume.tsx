@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo"
 import React from "react"
 import Heading from "../components/Heading"
 import Layout from "../components/Layout"
@@ -5,6 +6,10 @@ import Layout from "../components/Layout"
 const Resume: React.FC<{}>
     = () => {
         return <Layout>
+            <NextSeo
+                title="my resumé"
+                description="my greatest accomplisments summarized"
+            />
 
             <Heading>
                 My Resume</Heading>

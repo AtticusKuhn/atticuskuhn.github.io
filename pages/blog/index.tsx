@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
+import { NextSeo } from "next-seo"
 import Link from "next/link"
 import React from "react"
 import Heading from "../../components/Heading"
@@ -11,6 +12,10 @@ import { blog, getBlogs } from "../../lib/blog"
 function Blog({ blogs }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <>
         <Layout>
+            <NextSeo
+                title="my blog"
+                description="where I post my articles, hear my opinions."
+            />
             <Heading>my blog!</Heading>
             <p>Hear my personal thoughts on my blog.</p>
             <div className="m-6">

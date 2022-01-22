@@ -16,9 +16,9 @@ function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getS
             title={blog.title}
             description={blog.description}
             openGraph={{
-                title: blog.title,
-                description: 'Description of open graph article',
-                url: 'https://www.example.com/articles/article-title',
+                title: `BLOG | ${blog.title}`,
+                description: blog.description,
+                url: `https://atticuskuhn.github.io/blog/${blog.slug}`,
                 type: 'article',
                 article: {
                     publishedTime: new Date(blog.date).toISOString(),
@@ -31,6 +31,12 @@ function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getS
                     },
                 ],
             }}
+            additionalLinkTags={[
+                {
+                    rel: 'icon',
+                    href: blog.image,
+                },
+            ]}
         />
         <BlogJsonLd
             url={`https://atticuskuhn.github.io/blog/${blog.slug}`}

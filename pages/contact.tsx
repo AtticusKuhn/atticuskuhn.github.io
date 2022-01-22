@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo"
 import Link from "next/link"
 import React from "react"
 import Heading from "../components/Heading"
@@ -18,6 +19,10 @@ const ContactMethod: React.FC<{ name: string, image: string, link: string }> = (
 
 const Contact: React.FC<{}> = () => {
     return <Layout>
+        <NextSeo
+            title="contact me"
+            description="I want to get in touch with you"
+        />
         <Heading>Let's get in touch</Heading>
         <p>Feel free to reach out to me for any programming, or mathematical enquiries</p>
         <div>

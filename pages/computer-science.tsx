@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo"
 import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import Heading from "../components/Heading"
@@ -25,6 +26,10 @@ const Technologies: React.FC<{}> = () => {
         return () => clearInterval(interval)
     }, [currentTech])
     return <div>
+        <NextSeo
+            title="computer science"
+            description="I love computer science. Learn all about it."
+        />
         <h2 className="text-3xl">Technologies I've Used (and what I learned from each one)</h2>
         <div className="fl">
             <div className="grid grid-rows-3 grid-flow-col gap-xl w-6/12 m-auto">
