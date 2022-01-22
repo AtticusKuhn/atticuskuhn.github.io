@@ -18,7 +18,7 @@ function Blog({ blogs }: InferGetStaticPropsType<typeof getStaticProps>) {
             />
             <Heading>my blog!</Heading>
             <p>Hear my personal thoughts on my blog.</p>
-            <div className="m-6">
+            <div className="m-1 sm:m-6">
                 {blogs.map((blog, index) => <PreviewCard link={`/blog/${blog.slug}`}{...blog} key={index} />)}
             </div>
         </Layout>

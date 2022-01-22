@@ -82,12 +82,12 @@ const Math: React.FC<{}> = () => {
         <Area
             title="Complex Analysis"
             image="/images/complex-analysis.png"
-            text={<><MyLink href="TODO">Complex analysis is one of my favorite areas of mathematics</MyLink> . It is truly beautiful and wonderfully marries complex numbers with calculus. So many of the theorems of real analysis gain new light in complex analysis</>}
+            text={<><MyLink href="/blog/complex-analysis">Complex analysis is one of my favorite areas of mathematics</MyLink> . It is truly beautiful and wonderfully marries complex numbers with calculus. So many of the theorems of real analysis gain new light in complex analysis</>}
         />
         <Area
             title="Type Theory"
             image="/images/type-theory.png"
-            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/blog/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs</>}
+            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/projects/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs</>}
             left
         />
         <Area

@@ -1,6 +1,10 @@
 export default {
     titleTemplate: "Atticus Kuhn | %s",
     defaultTitle: "Atticus Kuhn's Personal Website",
+    additionalLinkTags: [{
+        rel: 'icon',
+        href: '/images/logo.png',
+    }],
     openGraph: {
         type: "Atticus Kuhn's Personal Website",
         locale: 'en_IE',
