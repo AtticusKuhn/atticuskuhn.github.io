@@ -1,5 +1,8 @@
 
 import fs from "fs"
+import { compareByDate } from "./utils";
+import { readMd } from "./mdutils";
+
 export type blog = {
     title: string,
     date: string,
@@ -9,29 +12,7 @@ export type blog = {
     description: string,
     image: string,
 }
-type parsedMd = {
-    content: string,
-    headers: {
-        [key: string]: string
-    }
-}
-const tojson = (str: string): { [prop: string]: string } =>
-    str
-        .split("\n")
-        .map((line) => line.split(":"))
-        .reduce((acc, [key, val]) => Object.assign(acc, { [key]: val.trim() }), {})
 
-const parseMd = (mdContent: string): parsedMd => {
-    const m = mdContent.match(/(?<=---\n).*?(?=\n---)/s)
-    const headers = tojson(m[0])
-    const m2 = mdContent.match(/(?<=---.*?---).*/s)
-    const content = m2[0]
-    return {
-        content,
-        headers,
-    }
-}
-const readMd = (filePath: string): parsedMd => parseMd(fs.readFileSync(filePath, "utf-8"))
 const blogDir = "./data/blog";
 export const getBlogs = (): blog[] => {
     const blogsList = fs.readdirSync(blogDir)
@@ -47,6 +28,6 @@ export const getBlogs = (): blog[] => {
             image: "/images/" + md.headers.image
         }
     })
-    return blogs
+    return blogs.sort(compareByDate);
 }
 export const findBlogBySlug = (slug: string): blog => getBlogs().find(b => b.slug === slug)

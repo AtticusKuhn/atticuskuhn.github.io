@@ -96,7 +96,7 @@ const Math: React.FC<{}> = () => {
             text="Abstract Algebra demonstrated to me that mathematics is all about abstraction. I now see groups everywhere, from vectors to the complex numbers, and I feel I can now look at the world of mathematics through new sunglasses, of seeing everything in the lens of a group."
         />
         <Subheading> Read My Papers</Subheading>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2  grid-cols-1 gap-4">
             {papers.map(p => <Card {...p} />)}
         </div>
     </Layout>

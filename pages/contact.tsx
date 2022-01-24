@@ -26,9 +26,9 @@ const Contact: React.FC<{}> = () => {
         <Heading>Let's get in touch</Heading>
         <p>Feel free to reach out to me for any programming, or mathematical enquiries</p>
         <div>
+            <ContactMethod image="/images/linkedin.png" pf="LinkedIn" link="https://www.linkedin.com/in/atticus-kuhn-a15170230/" name="Atticus Kuhn" />
             <ContactMethod image="/images/github.png" pf="github" link="https://github.com/AtticusKuhn" name="AtticusKuhn" />
             <ContactMethod image="/images/repl.png" pf="repl" link="https://replit.com/@AtticusKuhn" name="@AtticusKuhn" />
-            <ContactMethod image="/images/linkedin.png" pf="LinkedIn" link="https://www.linkedin.com/in/atticus-kuhn-a15170230/" name="Atticus Kuhn" />
         </div>
     </Layout>
 }
