@@ -5,11 +5,13 @@ date: May 26, 2021
 description: People malign javascript for all the wrong reasons
 image: techs/javascript.png
 ---
+
 Many people mock Javascript for being bad. Go on any programming forum and you will find countless jokes at the expense of Javascript, but I argue that many of the things people hate most about Javascript were necessary for it to survive.
 Why is Javascript perceived as bad?
- To see why this is the case let us first look at the most maligned aspects of Javascript. When I ask people why they hate Javascript, they will say something along the lines of 
+To see why this is the case let us first look at the most maligned aspects of Javascript. When I ask people why they hate Javascript, they will say something along the lines of 
 weak typing
-==
+
+
 # general weirdness
 I find many of the criticisms of javascript are "why doesn't this language stop me from shooting myself in the foot". These are certainly desirable traits, and they are certainly being remedied in modern times with strict mode in ES6 and typescript. 
 The History of Javascript 

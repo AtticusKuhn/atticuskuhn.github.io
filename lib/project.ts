@@ -19,7 +19,6 @@ export const getProjects = (): project[] => {
     const projectsList = fs.readdirSync(projectDir)
     const projects: project[] = projectsList.map((name) => {
         const md = readMd(projectDir + "/" + name)
-        console.log("md.headers.previewUrl", md.headers.previewUrl)
         return {
             content: md.content,
             date: md.headers.date,
