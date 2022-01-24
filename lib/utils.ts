@@ -29,3 +29,13 @@ export const parseMd = (mdContent: string): parsedMd => {
     }
 }
 export const compareByDate = <T extends { date: string }>(d1: T, d2: T) => new Date(d2.date).getTime() - new Date(d1.date).getTime();
+type MyOmit<T, U extends keyof T> = {
+    [P in Exclude<keyof T, U>]: T[P]
+}
+//@ts-ignore
+export const deleteKey = <Obj, str extends keyof Obj>(object: Obj, key: str): MyOmit<Obj, str> => Object.keys(object).filter(k =>
+    k !== key).reduce((obj, k) => {
+        obj[k] = object[k];
+        return obj;
+    }, {}
+    );

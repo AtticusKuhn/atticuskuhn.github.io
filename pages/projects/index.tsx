@@ -2,13 +2,16 @@ import { GetStaticProps, InferGetStaticPropsType } from "next"
 import { NextSeo } from "next-seo"
 import React from "react"
 import Heading from "../../components/Heading"
+import { useInput } from "../../components/Input"
 import Layout from "../../components/Layout"
 import PreviewCard from "../../components/PreviewCard"
 import { getProjects, project } from "../../lib/project"
+import { deleteKey } from "../../lib/utils"
 
 
 
 function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
+    const [searchString, searchBox] = useInput({ placeholder: "search for a blog" })
     return <>
         <Layout>
             <NextSeo
@@ -17,8 +20,11 @@ function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
             />
             <Heading>My Projects</Heading>
             <p>What have I been up to? Follow along with my progress on my coding adventure with these projects.</p>
+            {searchBox}
             <div className="m-6">
-                {projects.map((project, index) => <PreviewCard link={`/projects/${project.slug}`} {...project} key={index} />)}
+                {projects
+                    .filter((blog) => JSON.stringify(blog).toLowerCase().includes(searchString.toLowerCase()))
+                    .map((project, index) => <PreviewCard link={`/projects/${project.slug}`} {...project} key={index} />)}
             </div>
         </Layout>
     </>
@@ -27,7 +33,7 @@ export const getStaticProps: GetStaticProps<{ projects: project[] }> = async () 
     const projects = getProjects()
     return {
         props: {
-            projects
+            projects,
         }
     }
 }

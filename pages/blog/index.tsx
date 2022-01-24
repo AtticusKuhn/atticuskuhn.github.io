@@ -1,8 +1,9 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
 import { NextSeo } from "next-seo"
 import Link from "next/link"
-import React from "react"
+import React, { useState } from "react"
 import Heading from "../../components/Heading"
+import Input, { useInput } from "../../components/Input"
 import Layout from "../../components/Layout"
 import PreviewCard from "../../components/PreviewCard"
 import { blog, getBlogs } from "../../lib/blog"
@@ -10,6 +11,7 @@ import { blog, getBlogs } from "../../lib/blog"
 
 
 function Blog({ blogs }: InferGetStaticPropsType<typeof getStaticProps>) {
+    const [searchString, searchBox] = useInput({ placeholder: "search for a blog" })
     return <>
         <Layout>
             <NextSeo
@@ -18,8 +20,12 @@ function Blog({ blogs }: InferGetStaticPropsType<typeof getStaticProps>) {
             />
             <Heading>my blog!</Heading>
             <p>Hear my personal thoughts on my blog.</p>
+            {searchBox}
+            {/* <Input value={searchString} placeholder="search for a blog..." onInput={(e) => setSearchString(e.)} /> */}
             <div className="m-1 sm:m-6">
-                {blogs.map((blog, index) => <PreviewCard link={`/blog/${blog.slug}`}{...blog} key={index} />)}
+                {blogs
+                    .filter((blog) => JSON.stringify(blog).toLowerCase().includes(searchString.toLowerCase()))
+                    .map((blog, index) => <PreviewCard link={`/blog/${blog.slug}`}{...blog} key={index} />)}
             </div>
         </Layout>
     </>
