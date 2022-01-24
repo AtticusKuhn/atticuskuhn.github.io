@@ -12,10 +12,16 @@ const AboutPage: React.FC<{}> = () => (
       description="Learn all about me"
     />
     <Heading>About Me</Heading>
-    <p>Hi, I'm Atticus Kuhn, currently a student studying. My passions are computer science
-      and mathematics. Feel free to check out my site to learn more about me.
-    </p>
+    <div className="text-left mx-4xl">
+      <p className="my-3xl">Hi, I'm Atticus Kuhn, currently a student studying. My passions are computer science
+        and mathematics. Feel free to check out my site to learn more about me.
+      </p>
+      <p>
+        Please see my <MyLink href="https://www.linkedin.com/in/atticus-kuhn-a15170230/">LinkedIn</MyLink> to contact me.
+      </p>
+    </div>
   </Layout>
+
 )
 
 export default AboutPage
