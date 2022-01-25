@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://example.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/computer-science</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/math</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/complex-analysis</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/javascript-bad</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/10-ways-to-map-a-list</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/fav-lang</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/promise-is-a-monad</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/why-i-love-vim</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/blog/start</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/n-tris</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/spreadsheet</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/complex-projection-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/make-the-number</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/tree-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/pftb</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/common-scripts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/sprouts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/typing-simulator</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/number-trainer</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/speed-coding</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/beat-sorter</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/dodging-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+<url><loc>https://example.com/projects/ultimate-tic-tac-toe</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:07:35.756Z</lastmod></url>
+</urlset>
