@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://atticuskuhn.github.io
+
+# Sitemaps
+Sitemap: https://atticuskuhn.github.io/sitemap.xml
+Sitemap: https://atticuskuhn.github.io/sitemap-0.xml

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://atticuskuhn.github.io</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.454Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.454Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/computer-science</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/math</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/complex-analysis</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/javascript-bad</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/10-ways-to-map-a-list</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/fav-lang</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/promise-is-a-monad</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/why-i-love-vim</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/blog/start</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/n-tris</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/spreadsheet</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/complex-projection-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/make-the-number</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/tree-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/pftb</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/common-scripts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/sprouts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/typing-simulator</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/number-trainer</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/speed-coding</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/beat-sorter</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/dodging-game</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+<url><loc>https://atticuskuhn.github.io/projects/ultimate-tic-tac-toe</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-01-25T03:11:14.455Z</lastmod></url>
+</urlset>
