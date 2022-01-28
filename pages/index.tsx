@@ -8,6 +8,7 @@ import Heading from '../components/Heading'
 import Layout from '../components/Layout'
 import { blog, getBlogs } from '../lib/blog'
 import { getProjects, project } from '../lib/project'
+import { compareByDate } from '../lib/utils'
 
 function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
   return <Layout>
@@ -43,7 +44,7 @@ function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
 export const getStaticProps: GetStaticProps<{ recent: ((blog | project) & { link: string })[] }> = async (props) => {
   return {
     props: {
-      recent: [...getBlogs().map(b => Object.assign(b, { link: `/blog/${b.slug}` })), ...getProjects().map(b => Object.assign(b, { link: `/projects/${b.slug}` }))].sort((a, b) => (new Date(a.date).getTime() - new Date(b.date).getTime())).slice(0, 5)
+      recent: [...getBlogs().map(b => Object.assign(b, { link: `/blog/${b.slug}` })), ...getProjects().map(b => Object.assign(b, { link: `/projects/${b.slug}` }))].sort(compareByDate).slice(0, 5)
     }
   }
 }
