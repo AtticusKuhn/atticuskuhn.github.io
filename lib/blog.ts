@@ -12,6 +12,8 @@ export type blog = {
     description: string,
     image: string,
 }
+export type blogPreivew = Omit<blog, "content">;
+
 
 const blogDir = "./data/blog";
 export const getBlogs = (): blog[] => {

@@ -14,6 +14,8 @@ export type project = {
     previewUrl?: string,
 }
 
+export type projectPreview = Omit<project, "content">;
+
 const projectDir = "./data/project";
 export const getProjects = (): project[] => {
     const projectsList = fs.readdirSync(projectDir)

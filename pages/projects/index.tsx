@@ -5,7 +5,7 @@ import Heading from "../../components/Heading"
 import { useInput } from "../../components/Input"
 import Layout from "../../components/Layout"
 import PreviewCard from "../../components/PreviewCard"
-import { getProjects, project } from "../../lib/project"
+import { getProjects, project, projectPreview } from "../../lib/project"
 import { deleteKey } from "../../lib/utils"
 
 
@@ -29,8 +29,8 @@ function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
         </Layout>
     </>
 }
-export const getStaticProps: GetStaticProps<{ projects: project[] }> = async () => {
-    const projects = getProjects()
+export const getStaticProps: GetStaticProps<{ projects: projectPreview[] }> = async () => {
+    const projects = getProjects().map(b => deleteKey(b, "content"));
     return {
         props: {
             projects,

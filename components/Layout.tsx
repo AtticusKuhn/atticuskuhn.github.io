@@ -31,7 +31,7 @@ const Layout = ({ children }: Props) => {
     }
   }, [])
   const toggle = () => {
-    const newMode = mode === "dark" ? "light" : "dark"
+    const newMode: mode = mode === "dark" ? "light" : "dark"
     setMode(newMode)
     localStorage.setItem("mode", newMode)
   }
