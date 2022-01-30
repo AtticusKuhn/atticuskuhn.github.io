@@ -8,6 +8,10 @@ import { DefaultSeo } from 'next-seo'
 import SEO from "../neo-seo.config"
 function MyApp({ Component, pageProps }: AppProps) {
     return <>
+        <link
+            href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
+            rel="stylesheet"
+        />
         <DefaultSeo {...SEO} />
         <Component {...pageProps} />
     </>
