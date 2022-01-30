@@ -1,7 +1,9 @@
 import { NextSeo } from "next-seo"
 import Link from "next/link"
 import React, { useEffect, useState } from "react"
-import Heading from "../components/Heading"
+import Button from "../components/Button"
+import CodeViewer from "../components/CodeViewer"
+import Heading, { Subheading } from "../components/Heading"
 import Layout from "../components/Layout"
 import MyLink from "../components/MyLink"
 import { capitalize } from "../lib/utils"
@@ -62,9 +64,66 @@ const EPAMission: React.FC<{}> = () => {
         </div>
     </div>
 }
+const sleep = (time: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, time));
+const Animation: React.FC<{}> = () => {
+    const codes = [
+        `
+        const startDate = "July 2019"
+        return \`I have been coding for \${new Date().getFullYear() - new Date(startDate).getFullYear()} years!\`
+        `,
+        `const languages = ["javascript","python", "php", "haskell", "java", "scala", "prolog", "idris"]
+        return \`I know \${languages.length} different languages, ranging from \${languages[0]} to \${languages[languages.length - 1]}.\`
+        `,
+        `return fetch("https://api.github.com/users/AtticusKuhn").then(req=>req.json()).then((json)=>{
+        return \`I have created \${json["public_repos"]} repositiories on Github\`});`,
+        `return \`This page has recieved \${getViews()} views so far.\``,
+    ]
+    const [currentCode, setCurrentCode] = useState<number>(0)
+    const [val, setVal] = useState<string>("")
+    const [evalled, setEvalled] = useState<string>("")
+    const [isAnimating, setIsAnimating] = useState<boolean>(true)
+    useEffect(() => {
+        //@ts-ignore
+        window.getViews = () => Math.floor(0.0000001 * (new Date().getTime() - new Date("1/29/22").getTime()));
+        (async () => {
+            setIsAnimating(true)
+            let sliceacc = val.length
+            while (sliceacc > 1) {
+                await sleep(5)
+                setVal(val.slice(0, sliceacc))
+                sliceacc--
+            }
+            let acc = 0
+            while (acc <= codes[currentCode].length) {
+                await sleep(5)
+                setVal(codes[currentCode].slice(0, acc))
+                acc += 1
+            }
+            setIsAnimating(false)
+            setEvalled(await evalCode(codes[currentCode]))
+        })()
+    }, [currentCode])
+    const evalCode = async (val) => {
+        try {
+            return await new (Object.getPrototypeOf(async function () { }).constructor)(val)()
+        } catch (e) {
+            return e
+        }
+    }
+    return <>
+        <Subheading>My Story of Computer Science</Subheading>
+        <div className="fl">
+            <CodeViewer wrapLongLines wrapLines className="h-full py-0 my-0 w-6/12" language="javascript" inline={false} children={val} />
+            <div className="bg-primary-100 w-6/12 font-lg">
+                <div className="mx-auto my-auto">{evalled}</div></div>
+        </div>
+        <Button disabled={isAnimating} onClickFunc={() => setCurrentCode((currentCode + 1) % codes.length)}>Next</Button>
+    </>
+}
 const compSci: React.FC<{}> = () => {
     return <Layout>
         <Heading>My Love of Computer Science</Heading>
+        <Animation />
         <Technologies />
         <EPAMission />
     </Layout>
