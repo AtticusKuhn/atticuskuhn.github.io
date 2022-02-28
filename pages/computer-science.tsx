@@ -113,9 +113,10 @@ const Animation: React.FC<{}> = () => {
     return <>
         <Subheading>My Story of Computer Science</Subheading>
         <div className="fl">
-            <CodeViewer wrapLongLines wrapLines className="h-full py-0 my-0 w-6/12" language="javascript" inline={false} children={val} />
-            <div className="bg-primary-100 w-6/12 font-lg">
-                <div className="mx-auto my-auto">{evalled}</div></div>
+            <CodeViewer wrapLongLines wrapLines className="h-full py-0 my-0 sm:w-6/12 w-full" language="javascript" inline={false} children={val} />
+            <div className="bg-primary-100 font-lg sm:w-6/12 w-full">
+                <div className="mx-auto my-auto">{evalled}</div>
+            </div>
         </div>
         <Button disabled={isAnimating} onClickFunc={() => setCurrentCode((currentCode + 1) % codes.length)}>Next</Button>
     </>

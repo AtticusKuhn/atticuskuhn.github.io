@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = (props) => (<>
     <Link href={props.link}>
         <a>
             <div className="p-sm m-base flex flex-col bg-primary-100 rounded m-lg pop max-w-xl min-h-full	">
-                <img alt={props.title} className="p-sm mx-auto m-0 block sm:h-7/12 sm:w-7/12 h-full w-full" src={props.image} />
+                <img alt={props.title} className="p-tiny mx-auto m-0 block h-full w-full" src={props.image} />
                 <div className="font-bold">{props.title}</div>
                 <div className="text-primary-300 text-xs">{props.description}</div>
             </div>
