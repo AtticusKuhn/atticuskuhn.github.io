@@ -46,7 +46,7 @@ const Layout = ({ children }: Props) => {
           <NavLink link="computer-science" text="Computer Science" />
           <NavLink link="math" text="Mathematics" />
           <NavLink link="contact" text="Contact me" />
-          <Button className="p-0" onClickFunc={toggle}>{mode}</Button>
+          <Button onClickFunc={toggle}>{mode}</Button>
         </nav>
       </header>
       <div className="center bg-primary-200 mx-200 text-center min-h-screen		p-3xl	">

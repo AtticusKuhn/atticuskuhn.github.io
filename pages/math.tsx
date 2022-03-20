@@ -104,7 +104,7 @@ const Math: React.FC<{}> = () => {
         <Heading>Math: my Biggest Passion</Heading>
         <div>For many years, I have been passionate about mathematics. I have entered into some
             math competetions, and I study math outside of school. What I love most about it is
-            it's intriguing and wonderful nature.
+            its intriguing and wonderful nature.
         </div>
         <MathAnimations />
         <Subheading>Ways I enjoy mathematics</Subheading>
@@ -128,13 +128,13 @@ const Math: React.FC<{}> = () => {
         <Area
             title="Type Theory"
             image="/images/type-theory.png"
-            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/projects/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs</>}
+            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/projects/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs.</>}
             left
         />
         <Area
             title="Abstract Algebra"
             image="/images/a2_graph.png"
-            text="Abstract Algebra demonstrated to me that mathematics is all about abstraction. I now see groups everywhere, from vectors to the complex numbers, and I feel I can now look at the world of mathematics through new sunglasses, of seeing everything in the lens of a group."
+            text="Abstract Algebra demonstrated to me that mathematics is all about abstraction. I now see groups everywhere, from vectors to the complex numbers, and I feel I can now look at the world of mathematics through the lens of groups, rings and fields."
         />
         <Subheading> Read My Papers</Subheading>
         <div className="grid md:grid-cols-4 sm:grid-cols-2  grid-cols-1 gap-4">

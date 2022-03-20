@@ -11,7 +11,7 @@ import { deleteKey } from "../../lib/utils"
 
 
 function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
-    const [searchString, searchBox] = useInput({ placeholder: "search for a blog" })
+    const [searchString, searchBox] = useInput({ placeholder: "search for a project" })
     return <>
         <Layout>
             <NextSeo
@@ -19,7 +19,7 @@ function Project({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
                 description="see what I'm working on by checking out my projects"
             />
             <Heading>My Projects</Heading>
-            <p>What have I been up to? Follow along with my progress on my coding adventure with these projects.</p>
+            <p>What have I been up to? Follow along with my progress on my coding adventure.</p>
             {searchBox}
             <div className="m-6">
                 {projects

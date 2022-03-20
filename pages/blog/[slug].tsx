@@ -55,7 +55,7 @@ function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getS
             <div className="text-sm">Published {new Date(blog.date).toLocaleDateString("en-US")}</div>
             <div className="text-sm">Tags: {blog.tags.join(", ")}</div>
         </div>
-        <p className="text-justify my-3xl">
+        <p className="text-justify my-3xl w-10/12 sm:w-8/12 mx-auto">
             <MdViewer markdown={blog.content} />
         </p>
         <div>
