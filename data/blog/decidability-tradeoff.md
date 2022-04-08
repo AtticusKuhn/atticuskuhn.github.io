@@ -36,7 +36,33 @@ using a formal proof that a program typchecks, such as in languages such as [Idr
 In my view, the ideal type system of a programming language should be decidable. I don't want
 to have to write a proof that my progam is valid. The best type system for this is [Hindley-Milner](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) which is about as far as you can creep before you plumet off the cliff of undeciability.
 
-# Arithmatic
+# Presbuger Arithmetic
 
+Another beautiful example of walking the tightrope of decidability is [Presburger Arithmetic](https://en.wikipedia.org/wiki/Presburger_arithmetic). Surprisingly, it is a formulation of arithmetic
+where every statement is decidable by a simple algorithm. For example, you can say 
+`x+y > 10` and the Presburger algorithm will find all satisfying x and y. What is the catch?
+There is no multiplication. Presbuger Arithmetic only has plus, equals, there exists, and for all.
+So statements about prime factorization, for example, are impossible to state in Presburger Arithmetic. It seems that multiplcation is intricately linked with undecidability. And
+Once we say we want multiplication, arithmetic no longer becomes decidable.
+
+# Undecidability is Interesting
+
+Unlike programmers, who would want decidabilty type systems, we mathematicians do **not**
+want decidability in our systems. In truth, decidable systems are boring, and pose no
+interesting mathematical questions. Due to the well-established relationship between
+expressiveness and decidability, once we make a system expressive enough to pose
+interesting questions, it becomes undecidable. Furthermore, in decidable systems,
+truth is simply a matter of computation. If you want to check if a statement is 
+true, just run a computer to check it. Mathematics in decidable systems loses
+all its beauty and elegance of unconventional proofs.  So maybe undeciability isn't so bad.
+
+# Walking off the Cliff
+
+What can you take away from this? Well let's say you're designing a programming tool like
+a configuration language or a macro system. Users might demand more and more features, until,
+unwittingly, your simple little tool becomes undecidable. This happened to C++ templates,
+where now they are [turing complete](https://stackoverflow.com/questions/189172/c-templates-turing-complete) (or in other words undecidable). So my advice is to
+keep in mind the original goal of your project and be aware of any features that
+might cause you to wander from the island of safety that is decidability. 
 
 
