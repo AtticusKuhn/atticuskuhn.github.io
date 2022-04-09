@@ -22,7 +22,9 @@
   --color-primary-200: #151a21;
   --color-primary-100: #0b0e11;
 }
-
+ol > li::marker {
+  font-weight: bold;
+}
 :root {
   font-size: 17px;
   --color-secondary-washed-out: #879eed;

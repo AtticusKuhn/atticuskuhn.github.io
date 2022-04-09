@@ -1,6 +1,6 @@
 ---
 title: The Decidability Tradeoff
-tags: python, PHP, javascript, go, java, haskell
+tags: automata, decidability, presbuger arithmetic, type system
 date: April 7, 2022
 description: There is a fine line between power and decidability
 image: automata.jpeg

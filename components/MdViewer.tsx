@@ -28,16 +28,16 @@ const MdViewer: React.FC<{ markdown: string }> = (props) => {
                 )
             },
             h1(props) {
-                return <Heading {...props} />
+                return <Heading {...props} size="3xl" />
             },
             h2(props) {
-                return <Heading {...props} />
+                return <Heading {...props} size="2xl" />
             },
             h3(props) {
-                return <Heading {...props} />
+                return <Heading {...props} size="xl" />
             },
             h4(props) {
-                return <Heading {...props} />
+                return <Heading {...props} size="lg" />
             },
             h5(props) {
                 return <Heading {...props} />
@@ -47,6 +47,9 @@ const MdViewer: React.FC<{ markdown: string }> = (props) => {
             },
             a(props) {
                 return <MyLink {...props} href={props.href} />
+            },
+            li(props) {
+                return <li {...props} className="list-decimal" />
             }
         }}
     />
