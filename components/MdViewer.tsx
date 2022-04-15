@@ -4,12 +4,14 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import Heading from './Heading'
 import MyLink from './MyLink'
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import remarkGfm from 'remark-gfm'
 
 
 
 const MdViewer: React.FC<{ markdown: string }> = (props) => {
     return <ReactMarkdown
         children={props.markdown}
+        remarkPlugins={[remarkGfm]}
         components={{
             code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || '')
