@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm'
 
 const MdViewer: React.FC<{ markdown: string }> = (props) => {
     return <ReactMarkdown
+        className="markdown"
         children={props.markdown}
         remarkPlugins={[remarkGfm]}
         components={{
@@ -52,6 +53,9 @@ const MdViewer: React.FC<{ markdown: string }> = (props) => {
             },
             li(props) {
                 return <li {...props} className="list-decimal" />
+            },
+            table(props) {
+                return <table {...props} className="" />
             }
         }}
     />

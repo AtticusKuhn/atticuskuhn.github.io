@@ -1,0 +1,6 @@
+.markdown tr:nth-child(even) {
+    @apply bg-primary-100;
+}
+.markdown tr:nth-child(od) {
+    @apply bg-primary-200;
+}

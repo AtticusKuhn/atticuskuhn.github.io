@@ -118,6 +118,21 @@ message. In the song, he presents possible objections to going crusading ("what 
 wife do?"), and then explains why these concerns are not valid. 
 
 # Britain
+Britain is a country close to my heart, and it also has some very good songs.
+The first song is [My England](https://www.youtube.com/watch?v=jU123EhCjBA)
+
+
+Born and raised in a laying land  
+The guardian of the islands  
+Where the rolling hills and the mountain streams  
+meet the sweet sweet peace of the highlands  
+Oh how I love my motherland, this blessed land of freedom  
+Where every heart that shares her peace, feels the glory of her Eden  
+And she lifts up my soul like a bright sunny day  
+and she stays in my life like a song  
+
+These expressive lyrics capture the beauty of the English countryside. I can almost imagine \
+the green pastures of Yorkshire when I listen to this song.
 
 # Yugoslavia
 There is a very good video ["My Obsession With Wartime Yugoslav Music"](https://www.youtube.com/watch?v=v8EQllZFqLg) that also covers some of these same songs. I think the reason
@@ -128,8 +143,41 @@ They accomplished this through music. First, we will look at [My Dad is a War Cr
 ](https://www.youtube.com/watch?v=6TwioIc6a_8).
 
 |Serbian|English|
+|-------|-------|
 |Moj je tata zločinac iz rata|My dad is a war criminal 
 |Vi se potrudite pa ga osudite|You can try condemning him|
 |Nema niko muda da vodi ga do suda |But no one has the balls to arrest him |
+
+Apparantly this song is satire of the UN, who called Serbia war criminals. Honestly,
+it's a really funny song because it contains an unsual topic. I don't know any other
+songs where the singer just openly admits war crimes. 
+The next song we will look at is [Crni Bombarderi](https://www.youtube.com/watch?v=333OVHhpK5c).
+It's by Roki Vulovic, who has many other great songs you should also check out. 
+|Serbian|English|
+|-------|-------|
+|Da li je to istina ili se samo šališ|Is it the truth or are you just joking ?|
+|Na Balkanu hoćeš vatru da zapališ|You want to start a fire on the balkans| 
+|Prijatelju stari iz prošloga rata|Old friend from the previous war|
+|Stavićeš i sebi omcu oko vrata|You'll put the rope around your own neck|
+|Sa Srbima ne smije inat da se tera|Don't pick a fight with the defiant serbs|
+|Izgubićeš jato crnih bombardera|You'll lose your swarm of black bombers|
+
+This song refers to the [1999 F-117A shootdown](https://en.wikipedia.org/wiki/1999_F-117A_shootdown)
+incident. The US had the most advanced stealth technology in the world, and said
+their bomber was invisible. The Serbs had obselete Soviet missile technology,
+yet still managed to shoot down the plane.  They said ["Sorry we didn't know it was invisible"](https://commons.wikimedia.org/wiki/File:Serbian_poster_%22Sorry_we_didn%27t_know_it_was_invisible%22.jpg).
+I think that's a pretty amazing story, and the story is reflected in the lyrics of the song.
+
+# Conclusion
+I am trying to expand my collection of historical music. If you have any historical
+songs that you want me to add to this blog or that you want me to know about,
+please [contact me](/contact).
+ 
+
+
+
+ 
+
+ 
 
 
