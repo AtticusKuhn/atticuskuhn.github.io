@@ -121,7 +121,7 @@ wife do?"), and then explains why these concerns are not valid.
 Britain is a country close to my heart, and it also has some very good songs.
 The first song is [My England](https://www.youtube.com/watch?v=jU123EhCjBA)
 
-
+### My England
 Born and raised in a laying land  
 The guardian of the islands  
 Where the rolling hills and the mountain streams  
@@ -134,13 +134,14 @@ and she stays in my life like a song
 These expressive lyrics capture the beauty of the English countryside. I can almost imagine \
 the green pastures of Yorkshire when I listen to this song.
 
-And I would be remissed not to mention the most famous British Hisotrical song: [The British
+And I would be remissed not to mention the most famous British historical song: [The British
 Grenadiers](https://www.youtube.com/watch?v=PGrxHO-B2TY)
 
-Some talk of Alexander, and some of Hercules
-Of Hector and Lysander, and such great names as these.
-But of all the world's brave heroes, there's none that can compare.
-With a tow, row, row, row, row, row, to the British Grenadiers.
+### The British Grenadiers
+Some talk of Alexander, and some of Hercules  
+Of Hector and Lysander, and such great names as these.  
+But of all the world's brave heroes, there's none that can compare.  
+With a tow, row, row, row, row, row, to the British Grenadiers.  
 
 I do like the sophisticated swagger and bravado of this song. It's has the confident tone
 of dismissing these heros of antiquity. From the first bars, we can tell from this self-confidence
