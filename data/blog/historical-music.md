@@ -3,7 +3,7 @@ title: What Can We Learn from Historical Music?
 tags: History, Music
 date: April 11, 2022
 description: We can glean a lot from music.
-image: personal-identity.jpg
+image: Theobald_I.jpg
 ---
 
 # Why Look at Historical Music?
@@ -133,6 +133,18 @@ and she stays in my life like a song
 
 These expressive lyrics capture the beauty of the English countryside. I can almost imagine \
 the green pastures of Yorkshire when I listen to this song.
+
+And I would be remissed not to mention the most famous British Hisotrical song: [The British
+Grenadiers](https://www.youtube.com/watch?v=PGrxHO-B2TY)
+
+Some talk of Alexander, and some of Hercules
+Of Hector and Lysander, and such great names as these.
+But of all the world's brave heroes, there's none that can compare.
+With a tow, row, row, row, row, row, to the British Grenadiers.
+
+I do like the sophisticated swagger and bravado of this song. It's has the confident tone
+of dismissing these heros of antiquity. From the first bars, we can tell from this self-confidence
+that this is going to be a fun and uplifting song. 
 
 # Yugoslavia
 There is a very good video ["My Obsession With Wartime Yugoslav Music"](https://www.youtube.com/watch?v=v8EQllZFqLg) that also covers some of these same songs. I think the reason
