@@ -40,12 +40,12 @@ function ProjectPage({ project }: InferGetStaticPropsType<typeof getStaticProps>
                 <Button link={project.sourceCodeUrl}>See the Source Code</Button>
             </div>
             <div className="text-primary-400">{project.description}</div>
-            <img className="w-6/12 h-6/12 mx-auto" src={project.image} />
+            <img alt={project.title} title={project.title} className="w-6/12 h-6/12 mx-auto" src={project.image} />
             <div className="text-sm">By Atticus Kuhn</div>
             <div className="text-sm">Published {new Date(project.date).toLocaleDateString("en-US")}</div>
             <div className="text-sm">Tags: {project.tags.join(", ")}</div>
         </div>
-        <p className="text-justify my-3xl">
+        <p className="text-justify my-3xl w-10/12 sm:w-8/12  mx-auto">
             <MdViewer markdown={project.content} />
         </p>
     </Layout>

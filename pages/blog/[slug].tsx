@@ -50,7 +50,7 @@ function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getS
         <div className="container mx-auto flex content-center flex-col my-3xl">
             <Heading>{blog.title}</Heading>
             <div className="text-primary-400">{blog.description}</div>
-            <img className="w-6/12 h-6/12 mx-auto" src={blog.image} />
+            <img alt={blog.title} title={blog.title} className="w-6/12 h-6/12 mx-auto" src={blog.image} />
             <div className="text-sm">By Atticus Kuhn</div>
             <div className="text-sm">Published {new Date(blog.date).toLocaleDateString("en-US")}</div>
             <div className="text-sm">Tags: {blog.tags.join(", ")}</div>

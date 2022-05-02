@@ -55,6 +55,11 @@ const accomplishments: accomplishment[] = [
     team made it to regionals.`,
     image: "/images/scibowl.jpg",
   },
+  {
+    title: "National History Bowl Qualifer",
+    description: "In 2022, I represented Palo Alto High School at the national history bowl champsionships in Washington D.C. We competed against schools across the nation. We won a plaque for coming first in our divison",
+    image: "/images/historybowl.jpg"
+  }
 ]
 interface AccomplishmentsProps {
   accomplishments: accomplishment[]
