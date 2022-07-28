@@ -61,6 +61,14 @@ const papers: CardProps[] = [
         link: "/papers/atticus-ch.pdf",
         title: "The Continuum Hypothesis"
     },
+    {
+        image: "/images/factor-tree.gif",
+        description: `Prof. Jim Fowler said
+        "Unique factorization is a theorem that
+        people are insufficiently appreciative of" `,
+        link: "/papers/proving-uft.pdf",
+        title: "Proof of Unique Factorization from the axioms of integers"
+    }
 ]
 const Area: React.FC<{ title: string, image: string, text: React.ReactChild, left?: boolean }> = (props) => (<>
     <Subheading size="lg">{props.title}</Subheading>
@@ -144,7 +152,7 @@ const Math: React.FC<{}> = () => {
         />
         <Subheading> Read My Papers</Subheading>
         <div className="grid md:grid-cols-4 sm:grid-cols-2  grid-cols-1 gap-4">
-            {papers.map(p => <Card {...p} />)}
+            {papers.map((p, i) => <Card key={i} {...p} />)}
         </div>
     </Layout>
 }
