@@ -48,11 +48,11 @@ const accomplishments: accomplishment[] = [
     image: "/images/complex-analysis.png",
   },
   {
-    title: " Science Bowl Regionals Qualifier",
-    description: `I competted on behalf of my team in the [science bowl](https://science.osti.gov/wdts/nsb)
+    title: " Science Bowl President",
+    description: `I competed on behalf of my team in the [science bowl](https://science.osti.gov/wdts/nsb)
     , a buzzer based competition sponsered by the US Department of Energy to increase science
     awareness. On the team, I focused on physics, chemistry, and math problems. Our
-    team made it to regionals.`,
+    team made it to regionals. To find out more, go to [Our SciBowl Website](https://atticuskuhn.github.io/scibowl)`,
     image: "/images/scibowl.jpg",
   },
   {

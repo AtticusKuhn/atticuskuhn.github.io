@@ -5,6 +5,7 @@ import Heading from './Heading'
 import MyLink from './MyLink'
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import remarkGfm from 'remark-gfm'
+import Latex from "react-latex"
 
 
 
@@ -58,6 +59,7 @@ const MdViewer: React.FC<{ markdown: string }> = (props) => {
                 return <table {...props} className="" />
             }
         }}
+
     />
 }
 export default MdViewer

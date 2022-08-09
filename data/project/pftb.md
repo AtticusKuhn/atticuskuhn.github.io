@@ -1,7 +1,7 @@
 ---
 sourceCodeUrl: https://github.com/AtticusKuhn/proofs-from-the-book
 tags: proof, type theory, lean, proving
-date: Jane 22, 2021
+date: Jan 22, 2021
 title: Proofs From the Book
 description: Formally Verifying the most elegant proofs
 image: lean_logo.svg

@@ -2,6 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Button from './Button'
+import MyLink from './MyLink'
 
 type Props = {
   children?: ReactNode
@@ -18,7 +19,7 @@ type mode = "light" | "dark"
 const Footer: React.FC<{}> = () => {
   return <footer>
     <hr />
-    <span>Ⓒ all rights reserved Atticus Kuhn {new Date().getFullYear()}</span>
+    <span>Ⓒ all rights reserved <MyLink href="https://atticuskuhn.github.io">Atticus Kuhn</MyLink> {new Date().getFullYear()}</span>
   </footer>
 }
 const Layout = ({ children }: Props) => {
