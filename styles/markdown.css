@@ -4,3 +4,6 @@
 .markdown tr:nth-child(od) {
     @apply bg-primary-200;
 }
+.markdown table {
+    @apply mx-auto my-lg;
+}
