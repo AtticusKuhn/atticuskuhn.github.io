@@ -5,6 +5,7 @@ import Heading, { Subheading } from "../components/Heading"
 import Layout from "../components/Layout"
 import MyLink from "../components/MyLink"
 import Latex from "react-latex"
+import Area from "../components/Area"
 const papers: CardProps[] = [
     {
         image: "/images/fsm.png",
@@ -70,18 +71,7 @@ const papers: CardProps[] = [
         title: "Proof of Unique Factorization from the axioms of integers"
     }
 ]
-const Area: React.FC<{ title: string, image: string, text: React.ReactChild, left?: boolean }> = (props) => (<>
-    <Subheading size="lg">{props.title}</Subheading>
-    <div className="fl my-lg">
-        {props.left ? <>
-            <img className="sm:h-4/12 sm:w-4/12 h-full w-full" src={props.image} />
-            <div className="p-xl">{props.text}</div>
-        </> : <>
-            <div className="p-xl">{props.text}</div>
-            <img className="sm:h-4/12 sm:w-4/12 h-full w-full" src={props.image} />
-        </>}
-    </div>
-</>)
+
 const MathAnimations: React.FC<{}> = () => {
     const eqns: string[] = [
         `The number \\[\\alpha=\\sum_{k=1}^\\infty 10^{-k!}\\] is transcendental. To see this, let \\[\\frac{p_n}{q_n}=\\sum_{k=1}^n 10^{-k!}\\] be the truncation of the series, so in particular $q_n=10^{n!}$. Then we have \\[\\left|\\alpha-\\frac{p_n}{q_n}\\right|=\\sum_{k=n+1}^\\infty 10^{-k!}<\\frac{2}{10^{(n+1)!}}=\\frac{2}{q_n^{n+1}}.\\] For any $c>0$ and any $d\\ge 2$, we have $\\frac{2}{q_n^{n+1}}<\\frac{c}{q_n^d}$ for all sufficiently large $n$. Thus by Liouville's Theorem, $\\alpha$ is not algebraic of degree $d$, for any $d$.`,
