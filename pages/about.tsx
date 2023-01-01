@@ -88,7 +88,7 @@ const AboutPage: React.FC<{}> = () => (
       />
       <Area
         title="Ross Program"
-        text="I learned a lot of new maths at the summer Ross Mathematics Program in Ohio. I was a 6-week long intensive math camp where I made many new friends and also broadened my skills of number theory. "
+        text="I learned a lot of new maths at the summer Ross Mathematics Program in Ohio. It was a 6-week long intensive math camp where I made many new friends and also broadened my skills of number theory. "
         image="dsc_0119.jpg"
       />
       <Area
