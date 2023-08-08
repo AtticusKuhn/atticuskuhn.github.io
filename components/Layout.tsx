@@ -19,7 +19,12 @@ type mode = "light" | "dark"
 const Footer: React.FC<{}> = () => {
   return <footer>
     <hr />
-    <span>Ⓒ all rights reserved <MyLink href="https://atticuskuhn.github.io">Atticus Kuhn</MyLink> {new Date().getFullYear()}</span>
+    <span>
+    <MyLink href="rss.xml">RSS feed</MyLink> |
+    <MyLink href="atom.xml">atom feed</MyLink> |
+    <MyLink href="rss.json">JSON feed</MyLink> |
+    MIT License <MyLink href="https://atticuskuhn.github.io">Atticus Kuhn</MyLink> {new Date().getFullYear()}</span>
+
   </footer>
 }
 const Layout = ({ children }: Props) => {

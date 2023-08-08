@@ -9,6 +9,7 @@ import PreviewCard from "../../components/PreviewCard"
 import { blog, blogPreivew, getBlogs } from "../../lib/blog"
 import { compareByDate, deleteKey, randomItemsFromArray } from "../../lib/utils"
 
+import generateRssFeed from "../../scripts/index"
 
 
 function Blog({ blogs, dateOfOldestBlog, numberOfBlogs, numberOftags, sampleTags }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -40,6 +41,7 @@ export const getStaticProps: GetStaticProps<{
     sampleTags: string[]
 }> = async () => {
     const blogs = getBlogs().map(b => deleteKey(b, "content"));
+    // generateRssFeed();
     const dateOfOldestBlog = blogs.sort(compareByDate)[blogs.length - 1].date;
     const numberOfBlogs = blogs.length;
     //@ts-ignore

@@ -69,6 +69,18 @@ const papers: CardProps[] = [
         people are insufficiently appreciative of" `,
         link: "/papers/proving-uft.pdf",
         title: "Proof of Unique Factorization from the axioms of integers"
+    },
+    {
+        description: "Using the denotational design technique of Conal Elliott to prove the formal correctness of computer circuits",
+        link : "/papers/denotationalCircuits.pdf",
+        title: "Denotational Correct Computer Arithmatic",
+        image : "/images/halfadder.svg"
+    },
+    {
+        description: "Using the denotational design technique of Conal Elliott to prove the formal correctness of computer circuits",
+        link : "/papers/denotationalCircuitsTalk.pdf",
+        title: "Denotational Correct Computer Arithmatic Talk",
+        image : "/images/halfadder.svg"
     }
 ]
 
@@ -127,12 +139,14 @@ const Math: React.FC<{}> = () => {
         <Area
             title="Complex Analysis"
             image="/images/complex-analysis.png"
-            text={<><MyLink href="/blog/complex-analysis">Complex analysis is one of my favorite areas of mathematics</MyLink> . It is truly beautiful and wonderfully marries complex numbers with calculus. So many of the theorems of real analysis gain new light in complex analysis</>}
+            text={`[Complex analysis is one of my favorite areas of mathematics](/blogs/complex-analysis) . It is truly beautiful and wonderfully marries complex numbers with calculus. So many of the theorems of real analysis gain new light in complex analysis`}
         />
         <Area
             title="Type Theory"
             image="/images/type-theory.png"
-            text={<>Type theory solidified my understanding of the relationship between computers and mathematics, and how mathematics can directly be applied to computer science. By having computers <MyLink href="/projects/pftb"> execute proofs using type theory</MyLink>, I gained a new appreciation for rigor of proofs.</>}
+    text={`Type theory solidified my understanding of the relationship between computers
+and mathematics, and how mathematics can directly be applied to computer science. By having
+computers [execute proofs using type theory](/projects/pftb) I gained a new appreciation for rigor of proofs.`}
             left
         />
         <Area

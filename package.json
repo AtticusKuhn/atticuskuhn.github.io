@@ -6,9 +6,11 @@
     "start": "next start",
     "type-check": "tsc",
     "deploy": "NODE_ENV=production next build && next export -o dist && touch dist/.nojekyll && git add dist && git commit -m \"Initial dist subtree commit\" && git subtree push --prefix dist origin gh-pages",
-    "postbuild": "next-sitemap"
+    "rss": "npx ts-node scripts/index.ts",
+    "postbuild": "next-sitemap && yarn run rss"
   },
   "dependencies": {
+    "feed": "^4.2.2",
     "next": "latest",
     "next-seo": "^4.29.0",
     "react": "^17.0.2",
