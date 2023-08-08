@@ -1,0 +1,122 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Atticus Kuhns Website",
+    "home_page_url": "atticuskuhn.github.io",
+    "feed_url": "atticuskuhn.github.io/rss.json",
+    "description": "The Blog of Atticus Kuhn",
+    "icon": "atticuskuhn.github.io/logo.png",
+    "items": [
+        {
+            "id": "atticuskuhn.github.io/blog/rss",
+            "url": "atticuskuhn.github.io/blog/rss",
+            "title": "Why RSS Feeds are the Superior way to Stay Up-to-Date",
+            "summary": "I just started using an RSS feed",
+            "date_modified": "2023-08-08T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/linux",
+            "url": "atticuskuhn.github.io/blog/linux",
+            "title": "My experience using Linux",
+            "summary": "I recently switched to using only Linux. See how it turned out!",
+            "date_modified": "2023-01-01T08:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/create-language",
+            "url": "atticuskuhn.github.io/blog/create-language",
+            "title": "How to Create an Excellent Programming Lanugage",
+            "summary": "I have come up with a method to design well-loved languages",
+            "date_modified": "2022-10-10T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/ross",
+            "url": "atticuskuhn.github.io/blog/ross",
+            "title": "A Review of the Ross Program",
+            "summary": "I just attended the Ross Program",
+            "date_modified": "2022-08-28T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/historical-music",
+            "url": "atticuskuhn.github.io/blog/historical-music",
+            "title": "What Can We Learn from Historical Music?",
+            "summary": "We can glean a lot from music.",
+            "date_modified": "2022-04-11T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/create-personal-site",
+            "url": "atticuskuhn.github.io/blog/create-personal-site",
+            "title": "Tips for Creating a Personal Site",
+            "summary": "If you are thinking about creating a personal site, I have advice",
+            "date_modified": "2022-04-07T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/decidability-tradeoff",
+            "url": "atticuskuhn.github.io/blog/decidability-tradeoff",
+            "title": "The Decidability Tradeoff",
+            "summary": "There is a fine line between power and decidability",
+            "date_modified": "2022-04-07T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/sandeep-interview",
+            "url": "atticuskuhn.github.io/blog/sandeep-interview",
+            "title": "Interview with Machine Learning Expert",
+            "summary": "After his 30 years in the field, machine learning engineer Sandeep Srinivasan offers advice on how to tackle this complex career.",
+            "date_modified": "2022-02-27T08:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/machine-learning-overrated",
+            "url": "atticuskuhn.github.io/blog/machine-learning-overrated",
+            "title": "Machine Learning is overrated",
+            "summary": "I don't understand the hype around machine learning",
+            "date_modified": "2022-01-27T08:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/complex-analysis",
+            "url": "atticuskuhn.github.io/blog/complex-analysis",
+            "title": "Complex Analysis is Super Cool",
+            "summary": "it's my favorite field of mathematics",
+            "date_modified": "2022-01-20T08:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/javascript-bad",
+            "url": "atticuskuhn.github.io/blog/javascript-bad",
+            "title": "Javascript Being Bad is why it's Good",
+            "summary": "People malign javascript for all the wrong reasons",
+            "date_modified": "2021-05-26T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/10-ways-to-map-a-list",
+            "url": "atticuskuhn.github.io/blog/10-ways-to-map-a-list",
+            "title": "10 ways to map a list in haskell",
+            "summary": "Haskell is such a cool language",
+            "date_modified": "2021-05-02T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/fav-lang",
+            "url": "atticuskuhn.github.io/blog/fav-lang",
+            "title": "My favourite Programming languages",
+            "summary": "Programming languages are like tools, so you need the right tool for the job",
+            "date_modified": "2021-04-12T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/promise-is-a-monad",
+            "url": "atticuskuhn.github.io/blog/promise-is-a-monad",
+            "title": "Why promise IS a monad",
+            "summary": "There are monads all around us, even if we don't notice it",
+            "date_modified": "2021-04-12T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/why-i-love-vim",
+            "url": "atticuskuhn.github.io/blog/why-i-love-vim",
+            "title": "Why I love VIM",
+            "summary": "Vim is arguable the best text editor",
+            "date_modified": "2021-04-12T07:00:00.000Z"
+        },
+        {
+            "id": "atticuskuhn.github.io/blog/start",
+            "url": "atticuskuhn.github.io/blog/start",
+            "title": "The Start of My Blog",
+            "summary": "my first blog",
+            "date_modified": "2021-04-05T07:00:00.000Z"
+        }
+    ]
+}

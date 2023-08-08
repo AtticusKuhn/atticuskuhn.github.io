@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Atticus Kuhns Website</title>
+        <link>atticuskuhn.github.io</link>
+        <description>The Blog of Atticus Kuhn</description>
+        <lastBuildDate>Tue, 08 Aug 2023 23:02:34 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Atticus Kuhns Website</title>
+            <url>atticuskuhn.github.io/logo.png</url>
+            <link>atticuskuhn.github.io</link>
+        </image>
+        <copyright>MIT License: 2023, Ibas</copyright>
+        <item>
+            <title><![CDATA[Why RSS Feeds are the Superior way to Stay Up-to-Date]]></title>
+            <link>atticuskuhn.github.io/blog/rss</link>
+            <guid>atticuskuhn.github.io/blog/rss</guid>
+            <pubDate>Tue, 08 Aug 2023 07:00:00 GMT</pubDate>
+            <description><![CDATA[I just started using an RSS feed]]></description>
+        </item>
+        <item>
+            <title><![CDATA[My experience using Linux]]></title>
+            <link>atticuskuhn.github.io/blog/linux</link>
+            <guid>atticuskuhn.github.io/blog/linux</guid>
+            <pubDate>Sun, 01 Jan 2023 08:00:00 GMT</pubDate>
+            <description><![CDATA[I recently switched to using only Linux. See how it turned out!]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How to Create an Excellent Programming Lanugage]]></title>
+            <link>atticuskuhn.github.io/blog/create-language</link>
+            <guid>atticuskuhn.github.io/blog/create-language</guid>
+            <pubDate>Mon, 10 Oct 2022 07:00:00 GMT</pubDate>
+            <description><![CDATA[I have come up with a method to design well-loved languages]]></description>
+        </item>
+        <item>
+            <title><![CDATA[A Review of the Ross Program]]></title>
+            <link>atticuskuhn.github.io/blog/ross</link>
+            <guid>atticuskuhn.github.io/blog/ross</guid>
+            <pubDate>Sun, 28 Aug 2022 07:00:00 GMT</pubDate>
+            <description><![CDATA[I just attended the Ross Program]]></description>
+        </item>
+        <item>
+            <title><![CDATA[What Can We Learn from Historical Music?]]></title>
+            <link>atticuskuhn.github.io/blog/historical-music</link>
+            <guid>atticuskuhn.github.io/blog/historical-music</guid>
+            <pubDate>Mon, 11 Apr 2022 07:00:00 GMT</pubDate>
+            <description><![CDATA[We can glean a lot from music.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Tips for Creating a Personal Site]]></title>
+            <link>atticuskuhn.github.io/blog/create-personal-site</link>
+            <guid>atticuskuhn.github.io/blog/create-personal-site</guid>
+            <pubDate>Thu, 07 Apr 2022 07:00:00 GMT</pubDate>
+            <description><![CDATA[If you are thinking about creating a personal site, I have advice]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The Decidability Tradeoff]]></title>
+            <link>atticuskuhn.github.io/blog/decidability-tradeoff</link>
+            <guid>atticuskuhn.github.io/blog/decidability-tradeoff</guid>
+            <pubDate>Thu, 07 Apr 2022 07:00:00 GMT</pubDate>
+            <description><![CDATA[There is a fine line between power and decidability]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Interview with Machine Learning Expert]]></title>
+            <link>atticuskuhn.github.io/blog/sandeep-interview</link>
+            <guid>atticuskuhn.github.io/blog/sandeep-interview</guid>
+            <pubDate>Sun, 27 Feb 2022 08:00:00 GMT</pubDate>
+            <description><![CDATA[After his 30 years in the field, machine learning engineer Sandeep Srinivasan offers advice on how to tackle this complex career.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Machine Learning is overrated]]></title>
+            <link>atticuskuhn.github.io/blog/machine-learning-overrated</link>
+            <guid>atticuskuhn.github.io/blog/machine-learning-overrated</guid>
+            <pubDate>Thu, 27 Jan 2022 08:00:00 GMT</pubDate>
+            <description><![CDATA[I don't understand the hype around machine learning]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Complex Analysis is Super Cool]]></title>
+            <link>atticuskuhn.github.io/blog/complex-analysis</link>
+            <guid>atticuskuhn.github.io/blog/complex-analysis</guid>
+            <pubDate>Thu, 20 Jan 2022 08:00:00 GMT</pubDate>
+            <description><![CDATA[it's my favorite field of mathematics]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Javascript Being Bad is why it's Good]]></title>
+            <link>atticuskuhn.github.io/blog/javascript-bad</link>
+            <guid>atticuskuhn.github.io/blog/javascript-bad</guid>
+            <pubDate>Wed, 26 May 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[People malign javascript for all the wrong reasons]]></description>
+        </item>
+        <item>
+            <title><![CDATA[10 ways to map a list in haskell]]></title>
+            <link>atticuskuhn.github.io/blog/10-ways-to-map-a-list</link>
+            <guid>atticuskuhn.github.io/blog/10-ways-to-map-a-list</guid>
+            <pubDate>Sun, 02 May 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[Haskell is such a cool language]]></description>
+        </item>
+        <item>
+            <title><![CDATA[My favourite Programming languages]]></title>
+            <link>atticuskuhn.github.io/blog/fav-lang</link>
+            <guid>atticuskuhn.github.io/blog/fav-lang</guid>
+            <pubDate>Mon, 12 Apr 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[Programming languages are like tools, so you need the right tool for the job]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why promise IS a monad]]></title>
+            <link>atticuskuhn.github.io/blog/promise-is-a-monad</link>
+            <guid>atticuskuhn.github.io/blog/promise-is-a-monad</guid>
+            <pubDate>Mon, 12 Apr 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[There are monads all around us, even if we don't notice it]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why I love VIM]]></title>
+            <link>atticuskuhn.github.io/blog/why-i-love-vim</link>
+            <guid>atticuskuhn.github.io/blog/why-i-love-vim</guid>
+            <pubDate>Mon, 12 Apr 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[Vim is arguable the best text editor]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The Start of My Blog]]></title>
+            <link>atticuskuhn.github.io/blog/start</link>
+            <guid>atticuskuhn.github.io/blog/start</guid>
+            <pubDate>Mon, 05 Apr 2021 07:00:00 GMT</pubDate>
+            <description><![CDATA[my first blog]]></description>
+        </item>
+    </channel>
+</rss>
