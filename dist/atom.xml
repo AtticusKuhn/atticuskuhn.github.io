@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>atticuskuhn.github.io</id>
+    <title>Atticus Kuhns Website</title>
+    <updated>2023-08-08T23:02:34.365Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="atticuskuhn.github.io"/>
+    <link rel="self" href="atticuskuhn.github.io/atom.xml"/>
+    <subtitle>The Blog of Atticus Kuhn</subtitle>
+    <logo>atticuskuhn.github.io/logo.png</logo>
+    <icon>atticuskuhn.github.io/favicon.png</icon>
+    <rights>MIT License: 2023, Ibas</rights>
+    <entry>
+        <title type="html"><![CDATA[Why RSS Feeds are the Superior way to Stay Up-to-Date]]></title>
+        <id>atticuskuhn.github.io/blog/rss</id>
+        <link href="atticuskuhn.github.io/blog/rss"/>
+        <updated>2023-08-08T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I just started using an RSS feed]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My experience using Linux]]></title>
+        <id>atticuskuhn.github.io/blog/linux</id>
+        <link href="atticuskuhn.github.io/blog/linux"/>
+        <updated>2023-01-01T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I recently switched to using only Linux. See how it turned out!]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Create an Excellent Programming Lanugage]]></title>
+        <id>atticuskuhn.github.io/blog/create-language</id>
+        <link href="atticuskuhn.github.io/blog/create-language"/>
+        <updated>2022-10-10T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I have come up with a method to design well-loved languages]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Review of the Ross Program]]></title>
+        <id>atticuskuhn.github.io/blog/ross</id>
+        <link href="atticuskuhn.github.io/blog/ross"/>
+        <updated>2022-08-28T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I just attended the Ross Program]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Can We Learn from Historical Music?]]></title>
+        <id>atticuskuhn.github.io/blog/historical-music</id>
+        <link href="atticuskuhn.github.io/blog/historical-music"/>
+        <updated>2022-04-11T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We can glean a lot from music.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tips for Creating a Personal Site]]></title>
+        <id>atticuskuhn.github.io/blog/create-personal-site</id>
+        <link href="atticuskuhn.github.io/blog/create-personal-site"/>
+        <updated>2022-04-07T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you are thinking about creating a personal site, I have advice]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Decidability Tradeoff]]></title>
+        <id>atticuskuhn.github.io/blog/decidability-tradeoff</id>
+        <link href="atticuskuhn.github.io/blog/decidability-tradeoff"/>
+        <updated>2022-04-07T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There is a fine line between power and decidability]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Interview with Machine Learning Expert]]></title>
+        <id>atticuskuhn.github.io/blog/sandeep-interview</id>
+        <link href="atticuskuhn.github.io/blog/sandeep-interview"/>
+        <updated>2022-02-27T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[After his 30 years in the field, machine learning engineer Sandeep Srinivasan offers advice on how to tackle this complex career.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Machine Learning is overrated]]></title>
+        <id>atticuskuhn.github.io/blog/machine-learning-overrated</id>
+        <link href="atticuskuhn.github.io/blog/machine-learning-overrated"/>
+        <updated>2022-01-27T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I don't understand the hype around machine learning]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Complex Analysis is Super Cool]]></title>
+        <id>atticuskuhn.github.io/blog/complex-analysis</id>
+        <link href="atticuskuhn.github.io/blog/complex-analysis"/>
+        <updated>2022-01-20T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[it's my favorite field of mathematics]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Javascript Being Bad is why it's Good]]></title>
+        <id>atticuskuhn.github.io/blog/javascript-bad</id>
+        <link href="atticuskuhn.github.io/blog/javascript-bad"/>
+        <updated>2021-05-26T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[People malign javascript for all the wrong reasons]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10 ways to map a list in haskell]]></title>
+        <id>atticuskuhn.github.io/blog/10-ways-to-map-a-list</id>
+        <link href="atticuskuhn.github.io/blog/10-ways-to-map-a-list"/>
+        <updated>2021-05-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Haskell is such a cool language]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My favourite Programming languages]]></title>
+        <id>atticuskuhn.github.io/blog/fav-lang</id>
+        <link href="atticuskuhn.github.io/blog/fav-lang"/>
+        <updated>2021-04-12T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Programming languages are like tools, so you need the right tool for the job]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why promise IS a monad]]></title>
+        <id>atticuskuhn.github.io/blog/promise-is-a-monad</id>
+        <link href="atticuskuhn.github.io/blog/promise-is-a-monad"/>
+        <updated>2021-04-12T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There are monads all around us, even if we don't notice it]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why I love VIM]]></title>
+        <id>atticuskuhn.github.io/blog/why-i-love-vim</id>
+        <link href="atticuskuhn.github.io/blog/why-i-love-vim"/>
+        <updated>2021-04-12T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vim is arguable the best text editor]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Start of My Blog]]></title>
+        <id>atticuskuhn.github.io/blog/start</id>
+        <link href="atticuskuhn.github.io/blog/start"/>
+        <updated>2021-04-05T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[my first blog]]></summary>
+    </entry>
+</feed>
