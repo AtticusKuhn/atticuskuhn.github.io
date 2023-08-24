@@ -4,7 +4,7 @@
         <title>Atticus Kuhns Website</title>
         <link>atticuskuhn.github.io</link>
         <description>The Blog of Atticus Kuhn</description>
-        <lastBuildDate>Tue, 08 Aug 2023 23:02:34 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Aug 2023 00:27:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>atticuskuhn.github.io</link>
         </image>
         <copyright>MIT License: 2023, Ibas</copyright>
+        <item>
+            <title><![CDATA[Boolean Considered Harmful]]></title>
+            <link>atticuskuhn.github.io/blog/boolHarmful</link>
+            <guid>atticuskuhn.github.io/blog/boolHarmful</guid>
+            <pubDate>Wed, 23 Aug 2023 07:00:00 GMT</pubDate>
+            <description><![CDATA[Most uses of Boolean are wrong]]></description>
+        </item>
         <item>
             <title><![CDATA[Why RSS Feeds are the Superior way to Stay Up-to-Date]]></title>
             <link>atticuskuhn.github.io/blog/rss</link>
