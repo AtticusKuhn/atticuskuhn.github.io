@@ -24,7 +24,7 @@ function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
         <img width="500" height="500" src="/images/atticus-kuhn.jpg" />
       </div>
       <div className="p-3xl">
-        <p className="p-3xl">Hello, my name is Atticus Kuhn. I am currently a student. My passions include programming
+        <p className="p-3xl">Hello, my name is Atticus Kuhn. I am currently an undergraduate student student Computer Science at Trinity College, Cambridge . My passions include programming
           and mathematics. Feel free to check out my blog or my projects to see what I'm up to.
         </p>
         <div className="flex flex-col ">
@@ -36,7 +36,7 @@ function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
       </div>
     </div>
     <Heading>My Recent Activity</Heading>
-    <div className="fl">
+    <div className="grid md:grid-cols-5 sm:grid-cols-1 gap-4">
       {recent.map((rec) => <Card {...rec} link={rec.link} />)}
     </div>
   </Layout>

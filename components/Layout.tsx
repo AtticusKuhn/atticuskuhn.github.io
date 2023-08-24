@@ -20,9 +20,9 @@ const Footer: React.FC<{}> = () => {
   return <footer>
     <hr />
     <span>
-    <MyLink href="rss.xml">RSS feed</MyLink> |
-    <MyLink href="atom.xml">atom feed</MyLink> |
-    <MyLink href="rss.json">JSON feed</MyLink> |
+    <MyLink href="/rss.xml">RSS feed</MyLink> |
+    <MyLink href="/atom.xml">atom feed</MyLink> |
+    <MyLink href="/rss.json">JSON feed</MyLink> |
     MIT License <MyLink href="https://atticuskuhn.github.io">Atticus Kuhn</MyLink> {new Date().getFullYear()}</span>
 
   </footer>

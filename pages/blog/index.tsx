@@ -20,7 +20,7 @@ function Blog({ blogs, dateOfOldestBlog, numberOfBlogs, numberOftags, sampleTags
                 title="my blog"
                 description="where I post my articles, hear my opinions."
             />
-            <Heading>my blog!</Heading>
+            <Heading>My Blog!</Heading>
             <p>Hear my personal thoughts on my blog. </p>
             <p> Since {new Date(dateOfOldestBlog).getFullYear()}, I have written {numberOfBlogs} blogs on {numberOftags} different subjects, ranging  from {sampleTags[0]} to {sampleTags[1]}.</p>
             {searchBox}
@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps<{
     sampleTags: string[]
 }> = async () => {
     const blogs = getBlogs().map(b => deleteKey(b, "content"));
-    // generateRssFeed();
+    generateRssFeed();
     const dateOfOldestBlog = blogs.sort(compareByDate)[blogs.length - 1].date;
     const numberOfBlogs = blogs.length;
     //@ts-ignore

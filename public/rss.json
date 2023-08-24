@@ -7,6 +7,13 @@
     "icon": "atticuskuhn.github.io/logo.png",
     "items": [
         {
+            "id": "atticuskuhn.github.io/blog/boolHarmful",
+            "url": "atticuskuhn.github.io/blog/boolHarmful",
+            "title": "Boolean Considered Harmful",
+            "summary": "Most uses of Boolean are wrong",
+            "date_modified": "2023-08-23T07:00:00.000Z"
+        },
+        {
             "id": "atticuskuhn.github.io/blog/rss",
             "url": "atticuskuhn.github.io/blog/rss",
             "title": "Why RSS Feeds are the Superior way to Stay Up-to-Date",

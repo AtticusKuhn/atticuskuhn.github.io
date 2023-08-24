@@ -60,7 +60,7 @@ function BlogPage({ blog, reccomendedBlog }: InferGetStaticPropsType<typeof getS
         </p>
         <div>
             <div className="text-lg font-bold"> Reccomended Articles</div>
-            <div className="fl">
+            <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
                 {reccomendedBlog.map((rec) => <Card {...rec} link={`/blog/${rec.slug}`} />)}
             </div>
         </div>
