@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>atticuskuhn.github.io</id>
     <title>Atticus Kuhns Website</title>
-    <updated>2023-08-08T23:02:34.365Z</updated>
+    <updated>2023-08-24T00:27:56.044Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="atticuskuhn.github.io"/>
     <link rel="self" href="atticuskuhn.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>atticuskuhn.github.io/logo.png</logo>
     <icon>atticuskuhn.github.io/favicon.png</icon>
     <rights>MIT License: 2023, Ibas</rights>
+    <entry>
+        <title type="html"><![CDATA[Boolean Considered Harmful]]></title>
+        <id>atticuskuhn.github.io/blog/boolHarmful</id>
+        <link href="atticuskuhn.github.io/blog/boolHarmful"/>
+        <updated>2023-08-23T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Most uses of Boolean are wrong]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why RSS Feeds are the Superior way to Stay Up-to-Date]]></title>
         <id>atticuskuhn.github.io/blog/rss</id>
