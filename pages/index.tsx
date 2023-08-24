@@ -24,8 +24,8 @@ function IndexPage({ recent }: InferGetStaticPropsType<typeof getStaticProps>) {
         <img width="500" height="500" src="/images/atticus-kuhn.jpg" />
       </div>
       <div className="p-3xl">
-        <p className="p-3xl">Hello, my name is Atticus Kuhn. I am currently an undergraduate student student Computer Science at Trinity College, Cambridge . My passions include programming
-          and mathematics. Feel free to check out my blog or my projects to see what I'm up to.
+        <p className="p-3xl">Hello, my name is Atticus Kuhn. I am currently an undergraduate student studying Computer Science at Trinity College, Cambridge . My passions include programming
+          and mathematics. Feel free to check out my blog or my projects to see what I am up to.
         </p>
         <div className="flex flex-col ">
           <Button link="/about">Learn more about me &gt;&gt;</Button>
